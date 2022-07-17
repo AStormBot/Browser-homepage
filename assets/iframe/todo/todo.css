@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+
+* {
+    margin: 0;
+    /*overflow-y: hidden;*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom left, rgba(21, 21, 21, 0.04), rgba(14, 14, 14, 0.34));
+    backdrop-filter: blur(12px);
+    height: 450px;
+    font-family: sans-serif;
+}
+
+.app {
+    width: 100%;
+    height: 450px;
+}
+
+
+.app h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: .5rem .5rem 0 0;
+    background-color: rgba(90, 90, 90, 0.28);
+    backdrop-filter: blur(12px);
+    font-family: "Rajdhani", sans-serif;
+}
+
+.app form {
+    display: flex;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.15);
+    backdrop-filter: blur(5px);
+    padding-bottom: 6px;
+    padding-top: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 10000000;
+}
+
+.app form input {
+    border: none;
+    background-color: rgba(49, 49, 49, 0.58);
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+.app form input:focus {
+    outline: none;
+}
+.app form button {
+    border: none;
+    color: #16e8c1;
+    background-color: rgba(20, 208, 169, 0.35);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    height: 42px;
+    width: 15%;
+    margin-right: 3%;
+    transition: background-color 200ms;
+}
+
+.app form button:hover {
+    background-color: rgba(17, 227, 183, 0.65)
+}
+
+.app ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 5%;
+}
+
+.app ul li {
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(44, 44, 44, 0.28);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    margin-top: 10px;
+    transition: background-color 300ms;
+}
+.app ul li:hover {
+    background-color: rgba(55,55,55,0.34);
+}
+
+.check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgba(72, 72, 72, 0.35);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgb(47, 47, 47);
+    -webkit-appearance: none;
+}
+
+.check:checked {
+    border: none;
+    background-color: #1d20d2;
+}
+
+.task {
+    font-size: 18px;
+    padding: 0 10px;
+    width: fit-content;
+    background: transparent;
+    border: none;
+    color: #fff;
+    transition: color 300ms;
+}
+
+.task:focus {
+    outline: none;
+}
+
+.app ul li i {
+    float: right;
+    cursor: pointer;
+    color: white;
+    transition: color 300ms;
+}
+
+.app ul li i:hover {
+    color: rgb(255, 82, 82);
+}
+
+.completed {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(32, 47, 160, 0.54);
+    border-radius: 12px;
+    transition: background 300ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(29, 38, 135, 0.85);
+}
