@@ -1,149 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css">
+  <head>
+    <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css" />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/animation.css">
-    <meta charset="UTF-8">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <meta charset="UTF-8" />
     <title>Home Page</title>
     <style>
-        .bi {
-            color: #f1f1f1;
-        }
-        body {
-            overflow-x: hidden;
-        }
-        .body img {
-            object-fit: cover;
-            width: 100%;
-
-        }
+      .bi {
+        color: #f1f1f1;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .body img {
+        object-fit: cover;
+        width: 100%;
+      }
     </style>
     <script src="assets/javascript/animation.js"></script>
-</head>
-<body>
-<div class="body position-absolute w-100 h-100" id="body"></div>
-<div style="width: 100%; height: 100%; position: absolute;">
-<div class="row text-light">
-    <div class="col-3">
-        <div class="row justify-content-between position-relative">
+  </head>
+  <body>
+    <div class="body position-absolute w-100 h-100" id="body"></div>
+    <div style="width: 100%; height: 100%; position: absolute">
+      <div class="row text-light">
+        <div class="col-3">
+          <div class="row justify-content-between position-relative">
             <div class="col-1 h-100">
-                <!--Apps icon-->
-                <div class="row position-absolute top-50" id="suggest" style="width: 50px">
-                    <button class="col btn btn-outline-dark" id="timer">
-                        <i class="bi bi-stopwatch-fill"></i>
-                    </button>
-                    <button class="col btn btn-outline-dark" id="calendar">
-                        <i class="bi bi-calendar-date-fill"></i>
-                    </button>
-                    <button class="col btn btn-outline-dark" id="to-do">
-                        <i class="bi bi-check2-circle"></i>
-                    </button>
-                    <button class="col btn btn-outline-dark" id="note">
-                        <i class="bi bi-journal-text"></i>
-                    </button>
-                    <button class="col btn btn-outline-dark" id="close">
-                        <i class="bi bi-x-lg"></i>
-                    </button>
-                </div>
+              <!--Apps icon-->
+              <div class="row position-absolute top-50" id="suggest" style="width: 50px">
+                <button class="col btn btn-outline-dark" id="timer">
+                  <i class="bi bi-stopwatch-fill"></i>
+                </button>
+                <button class="col btn btn-outline-dark" id="calendar">
+                  <i class="bi bi-calendar-date-fill"></i>
+                </button>
+                <button class="col btn btn-outline-dark" id="to-do">
+                  <i class="bi bi-check2-circle"></i>
+                </button>
+                <button class="col btn btn-outline-dark" id="note">
+                  <i class="bi bi-journal-text"></i>
+                </button>
+                <button class="col btn btn-outline-dark" id="close">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
             </div>
             <div class="col-9 position-relative h-100">
-                <div id="target" class="center w-100 rounded" style="width: 450px;">
-                </div>
+              <div id="target" class="center w-100 rounded" style="width: 450px"></div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<!-- Weather -->
-<div id="weather" class="position-absolute" style="width: 200px">
-    <section class="ajax-section">
-        <div class="container">
+      <!-- Weather -->
+      <div id="weather" class="position-absolute" style="width: 200px">
+        <section class="ajax-section">
+          <div class="container">
             <ul class="cities"></ul>
-        </div>
-    </section>
-<!--    <a class="weatherwidget-io" href="https://forecast7.com/en/35d6951d39/tehran/" data-label_1="TEHRAN" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="dark" data-basecolor="" >TEHRAN WEATHER</a>-->
-<!--    <script>-->
-<!--        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');-->
-<!--    </script>-->
-</div>
-</div>
+          </div>
+        </section>
+        <!--    <a class="weatherwidget-io" href="https://forecast7.com/en/35d6951d39/tehran/" data-label_1="TEHRAN" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="dark" data-basecolor="" >TEHRAN WEATHER</a>-->
+        <!--    <script>-->
+        <!--        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');-->
+        <!--    </script>-->
+      </div>
+    </div>
 
-<div class="toolbar position-absolute bottom-0">
-    <div class="row justify-content-around p-2" id="toolbar">
+    <div class="toolbar position-absolute bottom-0">
+      <div class="row justify-content-around p-2" id="toolbar">
         <div class="col-1" onclick="window.open('https://instagram.com/', '_self')">
-            <img src="https://www.google.com/s2/favicons?domain=https://instagram.com/" alt="">
+          <img src="https://www.google.com/s2/favicons?domain=https://instagram.com/" alt="" />
         </div>
         <div class="col-1" onclick="window.open('https://www.discord.com/', '_self')">
-            <img src="https://www.google.com/s2/favicons?domain=www.discord.com/" alt="">
+          <img src="https://www.google.com/s2/favicons?domain=www.discord.com/" alt="" />
         </div>
         <div class="col-1" onclick="window.open('https://open.spotify.com', '_self')">
-            <img src="https://www.google.com/s2/favicons?domain=open.spotify.com/" alt="">
+          <img src="https://www.google.com/s2/favicons?domain=open.spotify.com/" alt="" />
         </div>
         <div class="col-1" onclick="window.open('https://gmail.com', '_self')">
-            <img src="https://www.google.com/s2/favicons?domain=https://mail.google.com/" alt="">
+          <img src="https://www.google.com/s2/favicons?domain=https://mail.google.com/" alt="" />
         </div>
         <div class="col-1" onclick="window.open('https://stackoverflow.com', '_self')">
-            <img src="https://www.google.com/s2/favicons?domain=https://stackoverflow.com/" alt="">
+          <img src="https://www.google.com/s2/favicons?domain=https://stackoverflow.com/" alt="" />
         </div>
         <div class="col-1" onclick="window.open('https://github.com', '_self')">
-            <img src="https://www.google.com/s2/favicons?domain=https://github.com/" alt="">
+          <img src="https://www.google.com/s2/favicons?domain=https://github.com/" alt="" />
         </div>
         <!--https://www.google.com/s2/favicons?domain={link url}/-->
+      </div>
     </div>
-</div>
 
-
-<div class="center text-center" style="transform: translate(-50%, -50%)" id="search-box-mother">
-    <div class="position-relative">
+    <div class="center text-center" style="transform: translate(-50%, -50%)" id="search-box-mother">
+      <div class="position-relative">
         <div class="row flex-column text-light">
-            <div class="col h1 fw-bold blured" id="Header-name"></div>
-            <div class="col">
-                <form action="https://www.google.com/search">
-                    <div class="input-group mb-3 border-0" id="search-time">
-                        <button class="input-group-text border-0" id="basic-addon1"><i class="bi bi-search"></i></button>
-                        <input title="Type Something for search" type="text" autocapitalize="on" autocomplete class="form-control border-0 text-light" placeholder="Search" aria-label="Search" name="q" aria-describedby="basic-addon1" required id="searchTextField">
-                    </div>
-                </form>
-            </div>
+          <div class="col h1 fw-bold blured" id="Header-name"></div>
+          <div class="col">
+            <form action="https://www.google.com/search">
+              <div class="input-group mb-3 border-0" id="search-time">
+                <button class="input-group-text border-0" id="basic-addon1">
+                  <i class="bi bi-search"></i>
+                </button>
+                <input
+                  title="Type Something for search"
+                  type="text"
+                  autocapitalize="on"
+                  autocomplete
+                  class="form-control border-0 text-light"
+                  placeholder="Search"
+                  aria-label="Search"
+                  name="q"
+                  aria-describedby="basic-addon1"
+                  required
+                  id="searchTextField"
+                />
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!--JS Import-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="./assets/javascript/note.js"></script>
-<script src="./assets/javascript/app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-<script src="assets/javascript/weather.js"></script>
-<script src="./assets/javascript/timer.js"></script>
-<script src="./assets/javascript/toolbar.js"></script>
-<script src="./assets/javascript/background.js"></script>
-<script src="./assets/javascript/results.js"></script>
-<script src="./assets/javascript/version.js"></script>
-<script>
-    let name2 = document.getElementById('Header-name');
-    const hour = new Date().getHours();
-    const name = "Nikan"
-    let random;
-    if (hour < 12 && hour > 6) {
-        random = ['Good Morning', "Hello", "Start Day", "net is waiting for you"]
-    }else if (hour < 20 && hour > 12){
-        random = ['Good Evening', "Code, Eat, Sleep", "You are best", "Life is good"];
-    }else {
-        random = ['Good Night', "Sweet Dreams", "Say Bye", "See you soon"]
-    }
+    <!--JS Import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/javascript/note.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/weather.js"></script>
+    <script src="./assets/javascript/timer.js"></script>
+    <script src="./assets/javascript/toolbar.js"></script>
+    <script src="./assets/javascript/background.js"></script>
+    <script src="./assets/javascript/results.js"></script>
+    <script src="./assets/javascript/version.js"></script>
+    <script src="./scripts/headerNames.js"></script>
+    <script>
+      let name2 = document.getElementById("Header-name");
+      const hour = new Date().getHours();
+      const name = "Nikan";
+      let random;
+      if (hour > 6 && hour < 12) {
+        random = headerNames.morning;
+      } else if (hour < 18) {
+        random = headerNames.afternoon;
+      } else if (hour < 21) {
+        random = headerNames.evening;
+      } else random = headerNames.night;
 
-    let text = random[Math.floor(Math.random() * random.length)] + ", " + name
+      let text = random[Math.floor(Math.random() * random.length)] + ", " + name;
 
-    for (let i = 0; i < text.length; i++) {
+      for (let i = 0; i < text.length; i++) {
         name2.innerHTML += `<span class="come-in-text" style="animation-delay: ${i * 100}ms">${text[i]}</span>`;
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
