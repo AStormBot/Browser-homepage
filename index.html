@@ -24,6 +24,7 @@
       }
       .body img {
         object-fit: cover;
+        width: 100%;
       }
     </style>
     <script src="assets/javascript/animation.js"></script>
@@ -158,7 +159,7 @@
     <script>
       let name2 = document.getElementById("Header-name");
       const hour = new Date().getHours();
-      const name = "{name}";
+      const name = "AStorm";
       let random;
       if (hour > 6 && hour < 12) {
         random = headerNames.morning;
