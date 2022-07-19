@@ -159,6 +159,10 @@ li {
     animation: come-in-name-up ease 500ms forwards;
 }
 .offcanvas {
-    background-color: #292929a9;
+    background-color: rgba(51, 51, 51, 0.31);
     backdrop-filter: blur(12px);
+}
+.offcanvas input, .offcanvas select {
+    background: rgba(44, 44, 44, 0.1) !important;
+    backdrop-filter: blur(5px);
 }
