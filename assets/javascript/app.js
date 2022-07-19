@@ -14,7 +14,7 @@ const html_outputs = {
                         </div>
                     </div>`,
 	calendar:
-		'<iframes src="./assets/iframes/calendar.html" style="border-radius: 12px;height: 500px;"></iframes>',
+		'<iframe src="./assets/iframes/calendar.html" style="border-radius: 12px;height: 500px;"></iframe>',
 	todo: `<iframe src="./assets/iframes/todo/todo.html" style="height: 450px; border-radius: 12px;" frameborder="0"></iframe>`,
 	note: "<textarea id='note-text' placeholder='Type your text in this section...' style='height: 400px; margin-top: 50%; transform: translateY(-50%)' class='text-light border-0 rounded-3 textarea'></textarea>",
 };
