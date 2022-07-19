@@ -76,7 +76,6 @@ document.body.addEventListener("mousemove", e => {
                 msg.textContent = "Please search for a valid city 😩";
             });
 
-        msg.textContent = ".";
         form.reset();
         input.focus();
     }

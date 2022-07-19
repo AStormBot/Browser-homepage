@@ -13,54 +13,67 @@ const html_outputs = {
                             </div>
                         </div>
                     </div>`,
-    calendar: '<iframe src="./assets/iframe/calendar.html" style="border-radius: 12px;height: 500px;"></iframe>',
-    todo:`<iframe src="./assets/iframe/todo/todo.html" style="height: 450px; border-radius: 12px;" frameborder="0"></iframe>`,
+    calendar: '<iframes src="./assets/iframes/calendar.html" style="border-radius: 12px;height: 500px;"></iframes>',
+    todo:`<iframe src="./assets/iframes/todo/todo.html" style="height: 450px; border-radius: 12px;" frameborder="0"></iframe>`,
     note: "<textarea id='note-text' placeholder='Enter your text here' style='height: 400px; margin-top: 50%; transform: translateY(-50%)' class='text-light border-0 rounded-3 textarea'></textarea>"
 }
 
-let close = {
-    timer: true,
-    calendar: false,
-    weather: true,
-    todo: false
-}
-let note_showing = false
+
+let timer_showing = false;
+let todo_showing = false;
+let calendar_showing = false;
+let note_showing = false;
+
 // window
 const target = $('#target');
+target.slideDown();
+target.slideUp();
 $('#timer').click(() => {
-    target.slideUp();
-    
-    target.html(html_outputs.timer);
-    
-    target.slideDown();
+    if (timer_showing) {
+        target.slideUp();
+    }else {
+        target.html(html_outputs.timer);
+        target.slideDown();
+    }
+    timer_showing = !timer_showing;
 })
 $('#calendar').click(() => {
-    target.slideUp();
-
-    target.html(html_outputs.calendar);
-
-    target.slideDown();
+    if (calendar_showing) {
+        target.slideUp();
+    }else {
+        target.html(html_outputs.calendar);
+        target.slideDown();
+    }
+    calendar_showing = !calendar_showing;
 })
 $('#to-do').click(() => {
-    target.slideUp();
-
-    target.html(html_outputs.todo);
-
-    target.slideDown();
+    if (todo_showing) {
+        target.slideUp();
+    }else {
+        target.html(html_outputs.todo);
+        target.slideDown();
+    }
+    todo_showing = !todo_showing;
 })
 $('#note').click(() => {
-    target.slideUp();
-    target.html(html_outputs.note);
-    if (!note_showing) {
-        save();
+    if (note_showing) {
+        target.slideUp();
+        save()
     }else {
+        target.html(html_outputs.note);
         load();
+        target.slideDown();
     }
-    target.slideDown();
     note_showing = !note_showing;
 })
 $('#close').click( () => {
     target.slideUp();
-    save();
+    if (note_showing) {
+        save();
+    }
+    timer_showing = false;
+    note_showing = false;
+    todo_showing = false;
+    calendar_showing = false;
 })
 
