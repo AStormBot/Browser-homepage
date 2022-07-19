@@ -14,6 +14,8 @@ if (hour > 6 && hour < 12) {
         random = headerNames.gamer.morning;
     }else if (text3 === "programmer") {
         random = headerNames.programmer.morning;
+    }else if (text3 === "student") {
+        random = headerNames.student.morning
     }
 } else if (hour < 18) {
     if (text3 === "normal") {
@@ -24,6 +26,8 @@ if (hour > 6 && hour < 12) {
         random = headerNames.gamer.afternoon;
     }else if (text3 === "programmer") {
         random = headerNames.programmer.afternoon;
+    }else if (text3 === "student") {
+        random = headerNames.student.afternoon
     }
 } else if (hour < 21) {
     if (text3 === "normal") {
@@ -34,6 +38,8 @@ if (hour > 6 && hour < 12) {
         random = headerNames.gamer.evening;
     }else if (text3 === "programmer") {
         random = headerNames.programmer.evening;
+    }else if (text3 === "student") {
+        random = headerNames.student.evening;
     }
 } else {
     if (text3 === "normal") {
@@ -44,8 +50,10 @@ if (hour > 6 && hour < 12) {
         random = headerNames.gamer.night;
     }else if (text3 === "programmer") {
         random = headerNames.programmer.night;
+    }else if (text3 === "student") {
+        random = headerNames.student.night;
     }
-};
+}
 
 let text = `${random[Math.floor(Math.random() * random.length)]}${name.length ? `, ${name}` : ""}!`;
 
