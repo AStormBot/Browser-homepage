@@ -136,6 +136,12 @@
             <option value="come-in-text-down" class="bg-dark">Come from down</option>
             <option value="come-in-text-up" class="bg-dark">come from down 2</option>
           </select>
+          <select id="animation-text" class="border-0 form-select text-light form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option value="normal" class="bg-dark" selected>Normal people</option>
+            <option value="gamer" class="bg-dark">Gamer</option>
+            <option value="programmer" class="bg-dark">Programmer</option>
+            <option value="boss" class="bg-dark">Boss</option>
+          </select>
           <hr class="hr">
           <div class="form-floating mb-3">
             <input type="url" class="border-0 text-light form-control " id="1" placeholder="{}" value="https://">
@@ -215,6 +221,7 @@
     <script>
       document.getElementById('floatingInput').value = localStorage.getItem('user-name') || "";
       document.getElementById('animation-type').value = localStorage.getItem('user-animation') || "";
+      document.getElementById('animation-type').value = localStorage.getItem('animation-text') || "";
 
     </script>
   </body>
