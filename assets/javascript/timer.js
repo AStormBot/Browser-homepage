@@ -49,6 +49,8 @@ function start() {
             } else {
                 button.innerHTML = "Start";
                 clearInterval(time);
+                disabled_toggle(min);
+                disabled_toggle(sec);
             }
         }, 1000);
     } else {
