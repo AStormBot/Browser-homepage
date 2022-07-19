@@ -89,6 +89,9 @@
         <div class="col-1" onclick="window.open('https://stackoverflow.com', '_self')">
             <img src="https://www.google.com/s2/favicons?domain=https://stackoverflow.com/" alt="">
         </div>
+        <div class="col-1" onclick="window.open('https://github.com', '_self')">
+            <img src="https://www.google.com/s2/favicons?domain=https://github.com/" alt="">
+        </div>
         <!--https://www.google.com/s2/favicons?domain={link url}/-->
     </div>
 </div>
@@ -127,7 +130,7 @@
     let name2 = document.getElementById('Header-name');
     const hour = new Date().getHours();
     const name = "Nikan"
-    let random = [];
+    let random;
     if (hour < 12 && hour > 6) {
         random = ['Good Morning', "Hello", "Start Day", "net is waiting for you"]
     }else if (hour < 20 && hour > 12){
