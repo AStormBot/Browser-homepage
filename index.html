@@ -178,7 +178,8 @@
     <script src="assets/javascript/animation.js"></script>
     <script src="./assets/javascript/setting.js"></script>
     <script>
-      $('#close').html('                  <i class="bi bi-gear-fill"></i>\n')
+      $('#close').html('                  <i class="bi bi-gear-fill"></i>\n');
+      document.getElementById('floatingInput').value = localStorage.getItem('user-name') || "";
     </script>
   </body>
 </html>
