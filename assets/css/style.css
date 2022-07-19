@@ -143,7 +143,7 @@ li {
         right: 0;
     }
 }
-.come-in-text {
+.typing-animation {
     opacity: 0;
     transform: translateY(200px);
     animation: come-in-name ease 500ms forwards;

@@ -49,7 +49,15 @@
                 <button class="col btn border-0" id="note">
                   <i class="bi bi-journal-text"></i>
                 </button>
-                <button class="col btn border-0" id="close" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">>
+                <button
+                  class="col btn border-0"
+                  id="settings"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  >
                 </button>
               </div>
             </div>
@@ -128,24 +136,24 @@
       </div>
     </div>
 
-<!--Setting form-->
+    <!--Setting form-->
     <div class="offcanvas offcanvas-start text-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Setting</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Configuration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Configuration"><i class="bi bi-x-lg"></i></button>
       </div>
       <div class="offcanvas-body">
         <form>
           <div class="form-floating mb-3 bg-dark">
-            <input type="text" class="border-0 text-light form-control bg-dark " id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Enter Name</label>
+            <input type="text" class="border-0 text-light form-control bg-dark" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Your name is...</label>
           </div>
           <select id="animation-type" class="border-0 form-select bg-dark text-light form-select-lg mb-3" aria-label=".form-select-lg example">
-            <option value="come-in-text" class="bg-dark" selected>Opacity</option>
-            <option value="come-in-text-down" class="bg-dark">Come from down</option>
+            <option value="typing-animation" class="bg-dark" selected>Typing animation</option>
+            <option value="come-in-text-down" class="bg-dark">come from down 1</option>
             <option value="come-in-text-up">come from down 2</option>
           </select>
-          <button class="btn btn-primary w-100" onclick="save_setting()">Save</button>
+          <button class="btn btn-primary w-100" onclick="save_setting()">Save changes</button>
         </form>
       </div>
     </div>
@@ -176,12 +184,11 @@
     <script src="./assets/javascript/version.js"></script>
     <script src="assets/scripts/headerNames.js"></script>
     <script src="assets/javascript/animation.js"></script>
-    <script src="./assets/javascript/setting.js"></script>
+    <script src="./assets/javascript/settings.js"></script>
     <script>
-      $('#close').html('<i class="bi bi-gear-fill"></i>\n');
-      document.getElementById('floatingInput').value = localStorage.getItem('user-name') || "";
-      document.getElementById('animation-type').value = localStorage.getItem('user-animation') || "";
-
+      $("#settings").html('<i class="bi bi-gear-fill"></i>\n');
+      document.getElementById("floatingInput").value = localStorage.getItem("user-name") || "";
+      document.getElementById("animation-type").value = localStorage.getItem("user-animation") || "";
     </script>
   </body>
 </html>
