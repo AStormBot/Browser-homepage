@@ -17,7 +17,7 @@ if (hour > 6 && hour < 12) {
     }else if (text3 === "student") {
         random = headerNames.student.morning
     }
-} else if (hour < 18) {
+} else if (hour > 6 && hour < 18) {
     if (text3 === "normal") {
         random = headerNames.normal.afternoon;
     }else if (text3 === "boss") {
@@ -29,7 +29,7 @@ if (hour > 6 && hour < 12) {
     }else if (text3 === "student") {
         random = headerNames.student.afternoon
     }
-} else if (hour < 21) {
+} else if (hour > 6 && hour < 21) {
     if (text3 === "normal") {
         random = headerNames.normal.evening;
     }else if (text3 === "boss") {
@@ -52,6 +52,7 @@ if (hour > 6 && hour < 12) {
         random = headerNames.programmer.night;
     }else if (text3 === "student") {
         random = headerNames.student.night;
+        console.log('bro')
     }
 }
 
