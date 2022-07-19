@@ -132,7 +132,7 @@
     <div class="offcanvas offcanvas-start text-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Setting</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
       </div>
       <div class="offcanvas-body">
         <form>
@@ -178,7 +178,7 @@
     <script src="assets/javascript/animation.js"></script>
     <script src="./assets/javascript/setting.js"></script>
     <script>
-      $('#close').html('                  <i class="bi bi-gear-fill"></i>\n');
+      $('#close').html('<i class="bi bi-gear-fill"></i>\n');
       document.getElementById('floatingInput').value = localStorage.getItem('user-name') || "";
       document.getElementById('animation-type').value = localStorage.getItem('user-animation') || "";
 
