@@ -148,3 +148,17 @@ li {
     transform: translateY(200px);
     animation: come-in-name ease 500ms forwards;
 }
+.come-in-text-down {
+    opacity: 0;
+    transform: translateY(200px);
+    animation: come-in-name-down ease 500ms forwards;
+}
+.come-in-text-up {
+    opacity: 0;
+    transform: translateY(200px);
+    animation: come-in-name-up ease 500ms forwards;
+}
+.offcanvas {
+    background-color: #292929a9;
+    backdrop-filter: blur(12px);
+}

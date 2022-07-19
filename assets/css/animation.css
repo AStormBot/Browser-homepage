@@ -1,4 +1,24 @@
 @keyframes come-in-name {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes come-in-name-down {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes come-in-name-up {
     0% {
         transform: translateY(200px);
         opacity: 0;
