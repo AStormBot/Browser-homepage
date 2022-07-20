@@ -63,16 +63,18 @@ document.body.addEventListener("mousemove", e => {
                 const markup = `
 <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
-                  <div class="col-6">
-                    <img src="${icon}" class="img-fluid rounded-start" alt="${
-                    weather[0]["description"]
-                }" width="100%">
-                  </div>
+              
                   <div class="col-6 text-light">
                     <div class="card-body">
+                    <h5 class="card-title">${name}</h5>
                       <h5 class="card-title">${Math.round(main.temp)}<sup>°C</sup></h5>
                       <p class="card-text">${weather[0]["description"]}</p>
                     </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="${icon}" class="img-fluid rounded-end" alt="${
+                    weather[0]["description"]
+                }" width="100%">
                   </div>
                 </div>
               </div>
