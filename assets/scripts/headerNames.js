@@ -24,13 +24,14 @@ const headerNames = {
 		],
 	},
 	programmer: {
-		morning: ["Your code editor is waiting, {username}", "{username}, try some caffee"],
+		morning: ["Your code editor is waiting, {username}", "{username}, try some coffee"],
 		afternoon: [
 			"Let's end some bugs",
 			"Time to get rid of errors",
 			"Time to code with {username}",
 			"{username} is the world's smartest programmer",
 			"The world's best programmer",
+			"Hug your code"
 		],
 		evening: ["Code, eat, and sleep", "{username}, the fun are the errors"],
 		night: [

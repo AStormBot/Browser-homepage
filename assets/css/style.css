@@ -122,8 +122,8 @@ li {
     width: 500px;
 }
 #search-time button, #search-time input {
-    background-color: rgba(35, 35, 35, 0.74);
-    backdrop-filter: blur(12px);
+    background-color: rgba(35, 35, 35, 0.47);
+    backdrop-filter: blur(4px);
 }
 @media (max-width: 1231px) {
     #search-box-mother {
