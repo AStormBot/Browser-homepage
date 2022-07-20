@@ -194,3 +194,6 @@ li {
 .accordion-button:not(.collapsed) i {
     transform: rotate(180deg);
 }
+li.city {
+    animation: weather 1s ease-out;
+}
