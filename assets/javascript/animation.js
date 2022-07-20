@@ -1,24 +1,32 @@
-let name12 = document.getElementById("Header-name");
+let welcomeElement = document.getElementById("Header-name");
 const hour = new Date().getHours();
-const name = localStorage.getItem("user-name");
-const animation_check = localStorage.getItem("user-animation") || "typing-animation";
-const text3 = localStorage.getItem("animation-text") || "normal";
-let random;
+const username = localStorage.getItem("user-name");
+const animation = localStorage.getItem("user-animation") || "typing-animation";
+const job = localStorage.getItem("animation-text") || "normal";
+let relatedMessages;
 
-if (hour > 6 && hour < 12) {
-	random = headerNames[text3].morning;
-} else if (hour > 6 && hour < 18) {
-	random = headerNames[text3].afternoon;
-} else if (hour > 6 && hour < 21) {
-	random = headerNames[text3].evening;
-} else {
-	random = headerNames[text3].night;
+function joinArrays(time) {
+	const defaultValues = headerNames.normal;
+	if (job === "normal") return defaultValues[time];
+
+	return headerNames[job][time].concat(defaultValues[time]);
 }
 
-let text = `${random[Math.floor(Math.random() * random.length)]}${name.length ? `, ${name}` : ""}!`;
+if (hour > 6 && hour < 12) {
+	relatedMessages = joinArrays("morning");
+} else if (hour > 6 && hour < 18) {
+	relatedMessages = joinArrays("afternoon");
+} else if (hour > 6 && hour < 21) {
+	relatedMessages = joinArrays("evening");
+} else {
+	relatedMessages = joinArrays("night");
+}
+
+const randomMessage = relatedMessages[Math.floor(Math.random() * relatedMessages.length)];
+const text = randomMessage.replaceAll("{username}", username);
 
 for (let i = 0; i < text.length; i++) {
-	name12.innerHTML += `<pre class="${animation_check} float-start" style="text-align:center ;animation-delay: ${
+	welcomeElement.innerHTML += `<pre class="${animation} float-start" style="animation-delay: ${
 		i * 50
 	}ms">${text[i]}</pre>`;
 }

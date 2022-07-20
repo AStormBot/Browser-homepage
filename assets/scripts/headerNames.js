@@ -1,103 +1,90 @@
 const headerNames = {
-    programmer: {
-        morning: [
-            "Good morning",
-            "Hello there",
-            "Start your day",
-            "Codes are waiting for you",
-            "Drink Coffee"
-        ],
-        afternoon: [
-            "Good afternoon",
-            'do your best',
-            "Let's Kill Bugs",
-            "Start Coding"
-        ],
-        evening: [
-            "Good evening",
-            "Code, eat, and sleep",
-            "You're the best",
-            "Life is awesome"
-        ],
-        night: ["Good night", "Sweet dreams", "Say goodbye", "See you soon"]
-    },
-    boss: {
-        morning: [
-            "Good morning",
-            "Start your day",
-            "Check Todo List"
-        ],
-        afternoon: [
-            "Good afternoon",
-            'do your best',
-            "Start Meeting"
-        ],
-        evening: [
-            "Good evening",
-            "Stop Working",
-            "World's best Boss",
-            "Life is awesome"
-        ],
-        night: ["Good night", "Sweet dreams", "Say goodbye to your office", "See you soon"]
-    },
-    student: {
-        morning: [
-            "Good morning",
-            "Hello there",
-            "Start your day",
-            "Check your bag"
-        ],
-        afternoon: [
-            "Good afternoon",
-            'do your best',
-            "Write homework",
-            "Open Book"
-        ],
-        evening: [
-            "Good evening",
-            "Write, Learn and Sleep",
-            "world's best student",
-            "Life is awesome"
-        ],
-        night: ["Good night", "Sweet dreams", "Don't forget Books", "See you soon"]
-    },
-    gamer: {
-        morning: [
-            "Good morning",
-            "Hello there",
-            "Start your day",
-            "Games are Waiting for you"
-        ],
-        afternoon: [
-            "Good afternoon",
-            'Setup your PC',
-            "Let's Kill",
-            "Open Mic"
-        ],
-        evening: [
-            "Good evening",
-            "Game, eat, and sleep",
-            "world's best gamer",
-            "Life is awesome"
-        ],
-        night: ["Good night", "Click Start", "Say Hello", "See you soon"]
-    },
-    normal: {
-        morning: [
-            "Good morning",
-            "Hello there",
-            "Start your day"
-        ],
-        afternoon: [
-            "Good afternoon",
-            'do your best',
-            "Start Party"
-        ],
-        evening: [
-            "Good evening",
-            "You're the best",
-            "Life is awesome"
-        ],
-        night: ["Good night", "Sweet dreams", "Say goodbye", "See you soon"]
-    }
+	normal: {
+		morning: [
+			"Morning, {username}!",
+			"Good morning, {username}!",
+			"Hello there, {username}!",
+			"{username}, I hope you have a great day!",
+		],
+		afternoon: [
+			"Good afternoon, {username}",
+			"{username}, do your best",
+			"{username} joined the party!",
+		],
+		evening: [
+			"Good evening, {username}",
+			"{username}, you're the best!",
+			"Life is awesome {username} :)",
+		],
+		night: [
+			"{username}, good night!",
+			"Sweet dreams",
+			"{username} see ya tomorrow!",
+			"Night time! {username}!",
+		],
+	},
+	programmer: {
+		morning: ["Your code editor is waiting, {username}", "{username}, try some caffee"],
+		afternoon: [
+			"Let's end some bugs",
+			"Time to get rid of errors",
+			"Time to code with {username}",
+			"{username} is the world's smartest programmer",
+			"The world's best programmer",
+		],
+		evening: ["Code, eat, and sleep", "{username}, the fun are the errors"],
+		night: [
+			"Your code editor is tired",
+			"Sleep time {username}",
+			"Hope you see buggy dreams",
+		],
+	},
+	boss: {
+		morning: ["Don't forget your to-do list"],
+		afternoon: ["Does {username} have any meeting?"],
+		evening: [
+			"Are you back from work, {username}?",
+			"World's best boss",
+			"{username} is the smartest boss!",
+		],
+		night: ["Time for your office to sleep", "{name}, you should get some sleep now"],
+	},
+	student: {
+		morning: [
+			"Time to make your backpack ready!",
+			"Have a great day at school, {username}",
+			"School's waiting for the one and only {username}",
+		],
+		afternoon: ["Don't forget to do your homework", "Afternoon, with homworks?"],
+		evening: [
+			"Write, learn, and teach",
+			"World's smartest student",
+			"{username} is the best!",
+		],
+		night: [
+			"Sleep well, you have school!",
+			"Another night! {username}!",
+			"Isn't it late {username}?",
+		],
+	},
+	gamer: {
+		morning: [
+			"Games are waiting for {username}",
+			"Don't forget to eat breakfast before gaming!",
+			"Did you have a good sleep, {username}?",
+		],
+		afternoon: [
+			"Starting some games?",
+			"Another playing session with {username}!",
+			"{username}, gamer time!",
+		],
+		evening: ["Gaming with you, {username}!", "Tired of games? Sleep!"],
+		night: [
+			"Gaming at night is Epic!",
+			"World's best gamer, {username}!",
+			"That's epic {username}, isn't it?",
+			"Good game, {username}!",
+		],
+	},
 };
+
