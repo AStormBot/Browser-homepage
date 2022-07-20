@@ -167,6 +167,30 @@ li {
     backdrop-filter: blur(5px);
     background: #2d2d2d9a;
 }
-.hr {
-
+.accordion-item, .accordion-body, .accordion-button, .accordion-header, .accordion-button {
+    background: #0000;
+    border: none;
+}
+.accordion-header {
+    backdrop-filter: blur(5px);
+    background: rgba(25, 25, 25, 0.11);
+    transition: background 300ms;
+}
+.accordion-button:not(.collapsed) {
+    background: rgba(18, 18, 18, 0.22);
+}
+.accordion-button {
+    width: 100%;
+    justify-content: space-between;
+}
+.accordion-button::after {
+    display: none;
+}
+.accordion-button i {
+    float: right;
+    transform: rotate(0);
+    transition: transform 200ms;
+}
+.accordion-button:not(.collapsed) i {
+    transform: rotate(180deg);
 }
