@@ -16,7 +16,7 @@ body {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     backdrop-filter: blur(15px);
-    animation: ease-out 500ms toolbar forwards;
+    animation: ease-out 750ms toolbar forwards;
 }
 .textarea {
     background-color: #3a3a3aa9;
@@ -199,5 +199,5 @@ li.city {
     animation: weather 1s ease-out;
 }
 #toolbar-mother {
-    animation: toolbar-2 ease-out 500ms;
+    animation: toolbar-2 ease-out 750ms;
 }
