@@ -135,7 +135,7 @@ body {
 }
 
 .day.today {
-    color: rgba(156, 202, 235, 1);
+    color: rgb(48, 75, 246);
 }
 
 .day-name {
