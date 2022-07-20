@@ -73,7 +73,7 @@
       <div id="weather" class="position-absolute" style="width: 300px">
         <section class="ajax-section">
           <div class="container">
-            <ul class="cities"></ul>
+            <ul class="cities" style="padding: 0 !important"></ul>
           </div>
         </section>
       </div>
@@ -88,10 +88,10 @@
     <div class="center text-center" style="transform: translate(-50%, -50%)" id="search-box-mother">
       <div class="position-relative">
         <div class="row flex-column text-light">
-          <div class="col h1 fw-bold blured" id="Header-name"></div>
+          <div class="col h1 fw-bold blured" id="Header-name" style="display: flex; justify-content: center"></div>
           <div class="col">
-            <form action="https://www.google.com/search">
-              <div class="input-group mb-3 border-0" id="search-time">
+            <form action="https://www.google.com/search" , style="position: relative">
+              <div class="input-group mb-3 border-0 center" id="search-time" style="transform: translate(-50%, 0%)">
                 <button class="input-group-text border-0" id="basic-addon1">
                   <i class="bi bi-search"></i>
                 </button>
@@ -126,7 +126,7 @@
           <!-- HERE -->
           <div class="accordion text-light" id="accordionExample">
             <div class="accordion-item text-light">
-              <h2 class="accordion-header  text-light" id="headingOne">
+              <h2 class="accordion-header text-light" id="headingOne">
                 <button
                   class="accordion-button text-light"
                   type="button"
@@ -280,14 +280,6 @@
       document.getElementById("floatingInput").value = localStorage.getItem("user-name") || "";
       document.getElementById("animation-type").value = localStorage.getItem("user-animation") || "";
       document.getElementById("animation-text").value = localStorage.getItem("animation-text") || "";
-
-      // on center
-      const text_width = text.length * 19;
-      const text_mother = $("#Header-name");
-      const text_mother_width = parseInt(text_mother.css("width").split("px")[0]);
-
-      const text59 = (text_mother_width - text_width) / 2;
-      text_mother.css("padding-left", `${Math.floor(text59)}px`);
     </script>
   </body>
 </html>

@@ -18,8 +18,8 @@ if (hour > 6 && hour < 12) {
 let text = `${random[Math.floor(Math.random() * random.length)]}${name.length ? `, ${name}` : ""}!`;
 
 for (let i = 0; i < text.length; i++) {
-	name12.innerHTML += `<pre class="${animation_check} float-start" style="animation-delay: ${
+	name12.innerHTML += `<pre class="${animation_check} float-start" style="text-align:center ;animation-delay: ${
 		i * 50
-	}ms" text-align=center>${text[i]}</pre>`;
+	}ms">${text[i]}</pre>`;
 }
 
