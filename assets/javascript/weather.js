@@ -90,8 +90,7 @@ function weather_check(e) {
 }
 
 document.body.addEventListener("mousemove", weather_check);
-document.body.addEventListener("mouseenter", weather_check);
-
+document.body.addEventListener("mouseout", weather_check);
 
 function capitalize(str) {
 	str = str.replace(/\_/g, " ");

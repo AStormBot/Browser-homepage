@@ -33,11 +33,11 @@ function start() {
 
         const time = setInterval(() => {
             if (!timing) {
-                if (time_data.sec === 1 && time_data.min === 0) {
+                if (time_data.sec <= 1 && time_data.min <= 0) {
                     timing = true;
                 }
 
-                if (time_data.sec === 0) {
+                if (time_data.sec <= 0) {
                     time_data.sec = 60;
                     time_data.min--;
                 }
@@ -48,6 +48,9 @@ function start() {
                 sec.value = time_data.sec;
             } else {
                 button.innerHTML = "Start";
+
+                document.getElementById('audio').play();
+
                 clearInterval(time);
                 disabled_toggle(min);
                 disabled_toggle(sec);
@@ -57,6 +60,7 @@ function start() {
         button.innerHTML = 'Start';
 
         timing = true;
+
 
         disabled_toggle(min);
         disabled_toggle(sec);
