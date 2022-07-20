@@ -61,13 +61,21 @@ document.body.addEventListener("mousemove", e => {
                 const li = document.createElement("li");
                 li.classList.add("city");
                 const markup = `
-        <div class="city-temp float-end">${Math.round(main.temp)}<sup>°C</sup></div>
-        <figure class="position-relative" style="height: 60px;">
-          <img class="city-icon" src="${icon}" alt="${
+<div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-6">
+                    <img src="${icon}" class="img-fluid rounded-start" alt="${
                     weather[0]["description"]
-                }">
-          <figcaption class="center" style="left: 58%; font-size: 15px;">${weather[0]["description"]}</figcaption>
-        </figure>
+                }" width="100%">
+                  </div>
+                  <div class="col-6 text-light">
+                    <div class="card-body">
+                      <h5 class="card-title">${Math.round(main.temp)}<sup>°C</sup></h5>
+                      <p class="card-text">${weather[0]["description"]}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
       `;
                 li.innerHTML = markup;
                 list.appendChild(li);

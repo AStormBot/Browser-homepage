@@ -1,23 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-</style>
-<path class="st0" d="M90.1,39.5c-1.9-1-3.6-1.2-4.8-1.2c-0.1-2.1-0.8-5.6-4.5-8.3c-3-2.2-5-2.3-8.4-2c-3.5,0.3-7.5,3.7-8.8,6
-	c-0.6-0.1-1.5-0.2-2.4-0.1c1.6-3,3.6-5.4,5.2-7.3c2.1-2.4,3.4-4,2.7-5.6c-0.7-1.5-2.9-1.8-6.4-1.8c-16.2,0-28.1,11.4-29.5,28
-	C29.9,49.1,27.1,52,26,54c-0.6-0.1-1.4-0.2-2.3-0.2c-2,0-3.7,0.5-5.1,1.4c-3.4,2.2-4.1,6.2-4.1,8.1c-3.4,1-8.5,3.9-8.9,9.9
-	c-0.3,4.7,1.2,7.4,2.5,8.9c1.3,1.4,3.1,2.2,4.7,2.2l45.5,0c0,0,0.1,0,0.3,0c0.8,0,3.4-0.1,5.9-1.7l0,0.2l0.7,0
-	c12.5,0,22-6.7,26.8-18.8c0.4-0.9,0-1.6-0.2-1.8c-0.8-1.1-2.4-0.8-5.8-0.3c-6.2,0.9-17,2.5-23-5.3h24c0.1,0,0.2,0,0.3,0
-	c2.3,0,6.5-1.3,7.5-6.3C95.5,46.5,94.7,41.8,90.1,39.5z M58.6,81.7l-45.7,0c-0.7,0-1.8-0.4-2.8-1.4c-1-1-2.1-3.1-1.8-6.9
-	c0.4-6.3,7.6-7.7,7.9-7.7l1.2-0.2l-0.1-1.2c0,0-0.3-4.7,3-6.8c1-0.6,2.2-0.9,3.7-0.9c1.4,0,2.5,0.3,2.5,0.3l0.8,0.2l0.5-0.7
-	c0-0.1,0.5-0.6,0.7-1.1c1.1-2.3,6-6.7,9.9-7c1-0.1,2-0.1,2.9-0.1c2.3,0,4,0.4,6.8,2.3c6,4.3,4.9,10.5,4.9,10.8l-0.4,2.1l2-0.5
-	c0,0,2.8-0.8,6.9,1.2c6.2,3.1,5.1,10.2,4.8,11.5C65,81.2,60,81.7,58.6,81.7z M86.3,64.4c0.9-0.1,2-0.3,2.7-0.4
-	c-3.1,7.2-9.4,15.3-22,16.1c0.7-1.1,1.3-2.4,1.7-4.1c0.3-1.7,1.7-10.5-6.2-14.4c-3-1.5-5.5-1.7-7-1.6c0-2.7-0.7-7.8-6.1-11.6
-	c-2.9-2.1-5.1-2.8-8.3-2.8c-1,0-2.1,0.1-3.1,0.2c-0.7,0.1-1.4,0.2-2.1,0.4c1.9-14.4,12.6-24.2,26.8-24.2c2.5,0,3.5,0.2,3.9,0.3
-	c-0.3,0.6-1.3,1.8-2.1,2.8c-4.3,5-12.3,14.4-6,29C64.3,67.6,79.2,65.4,86.3,64.4z M92.2,49.7c-0.8,4.2-4.7,4.2-5.2,4.2H61.3
-	c-0.2-0.3-0.3-0.6-0.5-1c-2.8-6.4-2.5-11.6-1-15.8c1.7-1,4-0.4,4-0.4l0.8,0.2l0.5-0.7c0.1-0.1,0.4-0.5,0.6-0.9
-	c0.8-1.6,4.1-4.6,6.8-4.8c3.1-0.2,4.3-0.2,6.7,1.5c4.1,3,3.4,7.2,3.4,7.4l-0.4,2l2-0.5c0.1,0,2-0.5,4.7,0.8
-	C93.1,43.9,92.4,48.8,92.2,49.7z"/>
+<!-- (c) ammap.com | SVG weather icons -->
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="64"
+    height="64"
+    viewbox="0 0 64 64">
+    <defs>
+        <filter id="blur" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.05"/>
+            </feComponentTransfer>
+            <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+        </filter>
+        <style type="text/css"><![CDATA[
+/*
+** CLOUDS
+*/
+@keyframes am-weather-cloud-2 {
+  0% {
+    -webkit-transform: translate(0px,0px);
+       -moz-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+            transform: translate(0px,0px);
+  }
+
+  50% {
+    -webkit-transform: translate(2px,0px);
+       -moz-transform: translate(2px,0px);
+        -ms-transform: translate(2px,0px);
+            transform: translate(2px,0px);
+  }
+
+  100% {
+    -webkit-transform: translate(0px,0px);
+       -moz-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+            transform: translate(0px,0px);
+  }
+}
+
+.am-weather-cloud-2 {
+  -webkit-animation-name: am-weather-cloud-2;
+     -moz-animation-name: am-weather-cloud-2;
+          animation-name: am-weather-cloud-2;
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/*
+** MOON
+*/
+@keyframes am-weather-moon {
+  0% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(15deg);
+       -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.am-weather-moon {
+  -webkit-animation-name: am-weather-moon;
+     -moz-animation-name: am-weather-moon;
+      -ms-animation-name: am-weather-moon;
+          animation-name: am-weather-moon;
+  -webkit-animation-duration: 6s;
+     -moz-animation-duration: 6s;
+      -ms-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+     -moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+      -ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+          transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+}
+
+@keyframes am-weather-moon-star-1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.am-weather-moon-star-1 {
+  -webkit-animation-name: am-weather-moon-star-1;
+     -moz-animation-name: am-weather-moon-star-1;
+      -ms-animation-name: am-weather-moon-star-1;
+          animation-name: am-weather-moon-star-1;
+  -webkit-animation-delay: 3s;
+     -moz-animation-delay: 3s;
+      -ms-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+     -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@keyframes am-weather-moon-star-2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.am-weather-moon-star-2 {
+  -webkit-animation-name: am-weather-moon-star-2;
+     -moz-animation-name: am-weather-moon-star-2;
+      -ms-animation-name: am-weather-moon-star-2;
+          animation-name: am-weather-moon-star-2;
+  -webkit-animation-delay: 5s;
+     -moz-animation-delay: 5s;
+      -ms-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+      -ms-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+     -moz-animation-iteration-count: 1;
+      -ms-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+        ]]></style>
+    </defs>
+    <g filter="url(#blur)" id="cloudy-night-3">
+        <g transform="translate(20,10)">
+            <g transform="translate(16,4), scale(0.8)">
+                <g class="am-weather-moon-star-1">
+                    <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10"/>
+                </g>
+                <g class="am-weather-moon-star-2">
+                    <polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10" transform="translate(20,10)"/>
+                </g>
+                <g class="am-weather-moon">
+                    <path d="M14.5,13.2c0-3.7,2-6.9,5-8.7   c-1.5-0.9-3.2-1.3-5-1.3c-5.5,0-10,4.5-10,10s4.5,10,10,10c1.8,0,3.5-0.5,5-1.3C16.5,20.2,14.5,16.9,14.5,13.2z" fill="orange" stroke="orange" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+            </g>
+            <g class="am-weather-cloud-2">
+                <path d="M47.7,35.4    c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
+            </g>
+        </g>
+    </g>
 </svg>

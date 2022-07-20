@@ -1,21 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-</style>
-<path class="st0" d="M66.9,66.6c-0.5,0-1-0.3-1.2-0.8c-0.3-0.7,0-1.5,0.6-1.8c5.6-2.6,9.8-7.2,12.6-13.8c-0.8,0.1-1.8,0.2-2.7,0.4
-	c-7.2,1.1-22.1,3.3-28.1-10.5c-6.4-14.7,1.7-24.1,6-29.2c0.8-1,1.8-2.1,2.1-2.7c-0.4-0.1-1.4-0.3-3.9-0.3c-16,0-27.2,11.9-27.2,28.9
-	c0,10.5,5.6,20.2,14.6,25.6c0.6,0.4,0.9,1.2,0.5,1.8c-0.4,0.6-1.2,0.9-1.8,0.5c-9.8-5.8-15.9-16.5-15.9-27.9
-	c0-18.3,12.6-31.5,29.9-31.5c3.5,0,5.7,0.3,6.5,1.9c0.8,1.6-0.6,3.2-2.7,5.7C52,17.7,45,26,50.7,39.1C55.8,51,68.9,49,75.9,48
-	c3.4-0.5,4.9-0.7,5.8,0.4c0.2,0.2,0.6,0.9,0.2,1.9c-3,7.7-8,13.3-14.4,16.3C67.3,66.6,67.1,66.6,66.9,66.6z"/>
-<path class="st0" d="M29.6,79.9c-0.2,0-0.4,0-0.6-0.1c-0.7-0.3-1-1.1-0.7-1.8l4.9-10.6c0.3-0.7,1.1-1,1.8-0.7c0.7,0.3,1,1.1,0.7,1.8
-	l-4.9,10.6C30.6,79.6,30.1,79.9,29.6,79.9z"/>
-<path class="st0" d="M36.8,88.7c-0.2,0-0.4,0-0.6-0.1c-0.7-0.3-0.9-1.1-0.6-1.8L48.3,61c0.3-0.7,1.1-0.9,1.8-0.6
-	c0.7,0.3,0.9,1.1,0.6,1.8L38,87.9C37.7,88.4,37.3,88.7,36.8,88.7z"/>
-<path class="st0" d="M45.9,94.8c-0.2,0-0.4,0-0.6-0.1c-0.7-0.3-0.9-1.1-0.6-1.8l16.5-32.7c0.3-0.7,1.1-0.9,1.8-0.6s0.9,1.1,0.6,1.8
-	L47.1,94.1C46.9,94.5,46.4,94.8,45.9,94.8z"/>
-<path class="st0" d="M62.4,88.1c-0.2,0-0.4,0-0.5-0.1c-0.7-0.3-1-1.1-0.7-1.8l7.5-17c0.3-0.7,1.1-1,1.8-0.7c0.7,0.3,1,1.1,0.7,1.8
-	l-7.5,17C63.4,87.8,62.9,88.1,62.4,88.1z"/>
+<!-- (c) ammap.com | SVG weather icons -->
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="64"
+    height="64"
+    viewbox="0 0 64 64">
+    <defs>
+        <filter id="blur" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.05"/>
+            </feComponentTransfer>
+            <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+        </filter>
+        <style type="text/css"><![CDATA[
+/*
+** SUN
+*/
+@keyframes am-weather-sun {
+  0% {
+    -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.am-weather-sun {
+  -webkit-animation-name: am-weather-sun;
+     -moz-animation-name: am-weather-sun;
+      -ms-animation-name: am-weather-sun;
+          animation-name: am-weather-sun;
+  -webkit-animation-duration: 9s;
+     -moz-animation-duration: 9s;
+      -ms-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/*
+** RAIN
+*/
+@keyframes am-weather-rain {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+.am-weather-rain-1 {
+  -webkit-animation-name: am-weather-rain;
+     -moz-animation-name: am-weather-rain;
+      -ms-animation-name: am-weather-rain;
+          animation-name: am-weather-rain;
+  -webkit-animation-duration: 8s;
+     -moz-animation-duration: 8s;
+      -ms-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.am-weather-rain-2 {
+  -webkit-animation-name: am-weather-rain;
+     -moz-animation-name: am-weather-rain;
+      -ms-animation-name: am-weather-rain;
+          animation-name: am-weather-rain;
+  -webkit-animation-delay: 0.25s;
+     -moz-animation-delay: 0.25s;
+      -ms-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-duration: 8s;
+     -moz-animation-duration: 8s;
+      -ms-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+        ]]></style>
+    </defs>
+    <g filter="url(#blur)" id="rainy-3">
+        <g transform="translate(20,10)">
+            <g transform="translate(0,16)">
+                <g class="am-weather-sun">
+                    <g>
+                        <line fifll="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(45)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(90)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(135)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(180)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(225)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(270)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                    <g transform="rotate(315)">
+                        <line fill="none" stroke="orange" stroke-linecap="round" stroke-width="2" transform="translate(0,9)" x1="0" x2="0" y1="0" y2="3"/>
+                    </g>
+                </g>
+                <circle cx="0" cy="0" fill="orange" r="5" stroke="orange" stroke-width="2"/>
+            </g>
+            <g>
+                <path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
+            </g>
+        </g>
+        <g transform="translate(34,46), rotate(10)">
+            <line class="am-weather-rain-1" fill="none" stroke="#91C0F8" stroke-dasharray="4,7" stroke-linecap="round" stroke-width="2" transform="translate(-6,1)" x1="0" x2="0" y1="0" y2="8" />
+            <line class="am-weather-rain-2" fill="none" stroke="#91C0F8" stroke-dasharray="4,7" stroke-linecap="round" stroke-width="2" transform="translate(0,-1)" x1="0" x2="0" y1="0" y2="8" />
+        </g>
+    </g>
 </svg>
