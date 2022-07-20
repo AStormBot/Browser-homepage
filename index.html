@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
-    <link rel="stylesheet" href="./assets/css/css.scss">
+    <link rel="stylesheet" href="./assets/css/css.scss" />
     <meta charset="UTF-8" />
     <title>Home Page</title>
     <style>
@@ -51,12 +51,12 @@
                   <i class="bi bi-journal-text"></i>
                 </button>
                 <button
-                        class="col btn border-0"
-                        id="settings"
-                        type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample"
-                        aria-controls="offcanvasExample"
+                  class="col btn border-0"
+                  id="settings"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
                 >
                   <i class="bi bi-gear-fill"></i>
                 </button>
@@ -73,9 +73,7 @@
       <div id="weather" class="position-absolute" style="width: 300px">
         <section class="ajax-section">
           <div class="container">
-            <ul class="cities">
-
-            </ul>
+            <ul class="cities"></ul>
           </div>
         </section>
       </div>
@@ -117,7 +115,7 @@
       </div>
     </div>
 
-<!--Setting form-->
+    <!--Setting form-->
     <div class="offcanvas offcanvas-start text-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Configuration</h5>
@@ -125,68 +123,126 @@
       </div>
       <div class="offcanvas-body">
         <form>
-          <div class="form-floating mb-3">
-            <input type="text" class="border-0 text-light form-control " id="floatingInput" placeholder="{}">
-            <label for="floatingInput">Your name is...</label>
+          <!-- HERE -->
+          <div class="accordion bg-dark text-light" id="accordionExample">
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header bg-dark text-light" id="headingOne">
+                <button
+                  class="accordion-button bg-dark text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Personality
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="border-0 text-light form-control" id="floatingInput" placeholder="{}" />
+                    <label for="floatingInput">Your name is...</label>
+                  </div>
+                  <select id="animation-text" class="border-0 form-select text-light form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option value="normal" class="bg-dark" selected>✨ Nothing special about you</option>
+                    <option value="gamer" class="bg-dark">Gamer</option>
+                    <option value="programmer" class="bg-dark">Programmer</option>
+                    <option value="boss" class="bg-dark">Boss</option>
+                    <option value="student" class="bg-dark">Student</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header bg-dark text-light" id="headingTwo">
+                <button
+                  class="accordion-button collapsed bg-dark text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Modules
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-check form-switch py-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="weather-check" checked onclick="role_toggle('weather-check')" />
+                    <label class="form-check-label" for="weather-check" onclick="role_toggle('weather-check')">Weather</label>
+                  </div>
+                  <div class="form-check form-switch py-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="shortcut-bar" onclick="role_toggle('shortcut-bar')" checked />
+                    <label class="form-check-label" for="shortcut-bar" onclick="role_toggle('shortcut-bar')">Bookmarks</label>
+                  </div>
+                  <div class="form-check form-switch py-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="search-bar" checked onclick="role_toggle('search-bar')" />
+                    <label class="form-check-label" for="search-bar" onclick="role_toggle('search-bar')">Search bar</label>
+                  </div>
+                  <hr class="hr" />
+                  <div class="form-check form-switch py-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="Text" checked onclick="role_toggle('Text')" />
+                    <label class="form-check-label" for="Text" onclick="role_toggle('Text')">Welcome message</label>
+                  </div>
+                  <p>Animation</p>
+                  <select id="animation-type" class="border-0 form-select text-light form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option value="typing-animation" class="bg-dark" selected>Typing</option>
+                    <option value="come-in-text-down" class="bg-dark">Come from down</option>
+                    <option value="come-in-text-up" class="bg-dark">come from down 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+              <h2 class="accordion-header bg-dark text-light" id="headingThree">
+                <button
+                  class="accordion-button collapsed text-light bg-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Bookmarks
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="form-floating mb-3">
+                    <input type="url" class="border-0 text-light form-control" id="1" placeholder="{}" value="https://" />
+                    <label for="1">Bookmark #1</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="url" class="border-0 text-light form-control" id="2" placeholder="{}" value="https://" />
+                    <label for="2">Bookmark #2</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="url" class="border-0 text-light form-control" id="3" placeholder="{}" value="https://" />
+                    <label for="3">Bookmark #3</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="url" class="border-0 text-light form-control" id="4" placeholder="{}" value="https://" />
+                    <label for="4">Bookmark #4</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="url" class="border-0 text-light form-control" id="5" placeholder="{}" value="https://" />
+                    <label for="5">Bookmark #5</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="url" class="border-0 text-light form-control" id="6" placeholder="{}" value="https://" />
+                    <label for="6">Bookmark #6</label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <select id="animation-type" class="border-0 form-select text-light form-select-lg mb-3" aria-label=".form-select-lg example">
-            <option value="typing-animation" class="bg-dark" selected>Typing animation</option>
-            <option value="come-in-text-down" class="bg-dark">Come from down</option>
-            <option value="come-in-text-up" class="bg-dark">come from down 2</option>
-          </select>
-          <select id="animation-text" class="border-0 form-select text-light form-select-lg mb-3" aria-label=".form-select-lg example">
-            <option value="normal" class="bg-dark" selected>Normal people</option>
-            <option value="gamer" class="bg-dark">Gamer</option>
-            <option value="programmer" class="bg-dark">Programmer</option>
-            <option value="boss" class="bg-dark">Boss</option>
-            <option value="student" class="bg-dark">Student</option>
-          </select>
-          <hr class="hr">
-          <div class="form-floating mb-3">
-            <input type="url" class="border-0 text-light form-control " id="1" placeholder="{}" value="https://">
-            <label for="1">Shortcut #1</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="url" class="border-0 text-light form-control " id="2" placeholder="{}" value="https://">
-            <label for="2">Shortcut #2</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="url" class="border-0 text-light form-control " id="3" placeholder="{}" value="https://">
-            <label for="3">Shortcut #3</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="url" class="border-0 text-light form-control " id="4" placeholder="{}" value="https://">
-            <label for="4">Shortcut #4</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="url" class="border-0 text-light form-control " id="5" placeholder="{}" value="https://">
-            <label for="5">Shortcut #5</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="url" class="border-0 text-light form-control " id="6" placeholder="{}" value="https://">
-            <label for="6">Shortcut #6</label>
-          </div>
-          <hr class="hr">
-          <div class="form-check form-switch py-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="weather-check" checked onclick="role_toggle('weather-check')">
-            <label class="form-check-label" for="weather-check" onclick="role_toggle('weather-check')">Weather</label>
-          </div>
-          <div class="form-check form-switch py-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="shortcut-bar" onclick="role_toggle('shortcut-bar')" checked>
-            <label class="form-check-label" for="shortcut-bar" onclick="role_toggle('shortcut-bar')">shortcut bar</label>
-          </div>
-          <div class="form-check form-switch py-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="search-bar" checked onclick="role_toggle('search-bar')">
-            <label class="form-check-label" for="search-bar" onclick="role_toggle('search-bar')">search bar</label>
-          </div>
-          <div class="form-check form-switch py-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="Text" checked onclick="role_toggle('Text')">
-            <label class="form-check-label" for="Text" onclick="role_toggle('Text')">Text</label>
-          </div>
-          <button class="btn btn-primary w-100 mt-4" onclick="save_setting()">Save</button>
+          <button class="btn btn-primary w-100 mt-4" onclick="save_setting()">Save changes</button>
         </form>
       </div>
     </div>
+
     <!--JS Import-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/javascript/note.js"></script>
@@ -218,10 +274,17 @@
     <script src="./assets/javascript/shortcut.js"></script>
     <script src="./assets/javascript/check.js"></script>
     <script>
-      document.getElementById('floatingInput').value = localStorage.getItem('user-name') || "";
-      document.getElementById('animation-type').value = localStorage.getItem('user-animation') || "";
-      document.getElementById('animation-text').value = localStorage.getItem('animation-text') || "";
+      document.getElementById("floatingInput").value = localStorage.getItem("user-name") || "";
+      document.getElementById("animation-type").value = localStorage.getItem("user-animation") || "";
+      document.getElementById("animation-text").value = localStorage.getItem("animation-text") || "";
 
+      // on center
+      const text_width = text.length * 19;
+      const text_mother = $("#Header-name");
+      const text_mother_width = parseInt(text_mother.css("width").split("px")[0]);
+
+      const text59 = (text_mother_width - text_width) / 2;
+      text_mother.css("padding-left", `${Math.floor(text59)}px`);
     </script>
   </body>
 </html>
