@@ -1,6 +1,6 @@
 let welcomeElement = document.getElementById("Header-name");
 const hour = new Date().getHours();
-const username = localStorage.getItem("user-name") || "Sir";
+const username = localStorage.getItem("user-name") || "Dear";
 const animation = localStorage.getItem("user-animation") || "typing-animation";
 const job = localStorage.getItem("animation-text") || "normal";
 let relatedMessages;
