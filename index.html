@@ -221,7 +221,13 @@
       document.getElementById('floatingInput').value = localStorage.getItem('user-name') || "";
       document.getElementById('animation-type').value = localStorage.getItem('user-animation') || "";
       document.getElementById('animation-text').value = localStorage.getItem('animation-text') || "";
+      // on center
+      const text_width = text.length * 19;
+      const text_mother = $('#Header-name');
+      const text_mother_width = parseInt(text_mother.css('width').split('px')[0]);
 
+      const text59 = (text_mother_width - text_width) / 2;
+      text_mother.css('padding-left', `${Math.floor(text59)}px`);
     </script>
   </body>
 </html>
