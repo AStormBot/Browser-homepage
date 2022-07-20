@@ -10,8 +10,8 @@ const headerNames = {
         afternoon: [
             "Good afternoon",
             'do your best',
-            "Let's Rock",
-            "Start Party"
+            "Let's Kill Bugs",
+            "Start Coding"
         ],
         evening: [
             "Good evening",
