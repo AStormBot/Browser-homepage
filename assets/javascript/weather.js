@@ -6,7 +6,7 @@ const list = document.querySelector(".ajax-section .cities");
 const apiKey = "4d8fb5b93d4af21d66a2948710284366";
 let meow = 1;
 
-document.body.addEventListener("mousemove", (e) => {
+function weather_check(e) {
 	if (meow === 1) {
 		meow = 2;
 		e.preventDefault();
@@ -87,7 +87,11 @@ document.body.addEventListener("mousemove", (e) => {
 		form.reset();
 		input.focus();
 	}
-});
+}
+
+document.body.addEventListener("mousemove", weather_check);
+document.body.addEventListener("mouseenter", weather_check);
+
 
 function capitalize(str) {
 	str = str.replace(/\_/g, " ");
