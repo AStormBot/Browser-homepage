@@ -4,7 +4,8 @@ const headerNames = {
             "Good morning",
             "Hello there",
             "Start your day",
-            "We're waiting for you"
+            "Codes are waiting for you",
+            "Drink Coffee"
         ],
         afternoon: [
             "Good afternoon",
