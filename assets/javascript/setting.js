@@ -11,4 +11,8 @@ function save_setting() {
     for (let i = 0; i < 6; i++) {
         local.setItem(`${i}`, document.getElementById(`${i + 1}`).value)
     }
+    
+    for (let i = 0; i < 3; i++) {
+        local.setItem(`${i}-pic`, document.getElementById(`${i + 1}-pic`).value)
+    }
 }

@@ -205,3 +205,10 @@ li.city {
 #toolbar-mother {
     animation: toolbar-2 ease-out 750ms;
 }
+label.btn.btn-outline-primary:hover > i.bi.text-primary {
+    color: #ffffff!important;
+    transition: 500ms;
+}
+::-webkit-file-upload-button { /* chrome and edge */
+    display: none;
+}

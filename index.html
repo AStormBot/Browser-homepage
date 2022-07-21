@@ -240,6 +240,38 @@
                 </div>
               </div>
             </div>
+            <div class="accordion-item text-light">
+              <h2 class="accordion-header text-light" id="headingfour">
+                <button
+                        class="accordion-button collapsed text-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsefour"
+                        aria-expanded="false"
+                        aria-controls="collapsefour"
+                >
+                  Pictures
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <label class="btn btn-outline-primary btn-sm center-block btn-file w-100 ">
+                    <i class="bi bi-cloud-arrow-up-fill h2 text-primary"></i>
+                    <input type="file" class="w-50" id="1-pic">
+                  </label>
+                  <label class="btn btn-outline-primary btn-sm center-block btn-file w-100 my-3">
+                    <i class="bi bi-cloud-arrow-up-fill h2 text-primary"></i>
+                    <input type="file" class="w-50" id="2-pic">
+                  </label>
+                  <label class="btn btn-outline-primary btn-sm center-block btn-file w-100 ">
+                    <i class="bi bi-cloud-arrow-up-fill h2 text-primary"></i>
+                    <input type="file" class="w-50" id="3-pic">
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
           <button class="btn btn-primary w-100 mt-4" onclick="save_setting()">Save changes</button>
         </form>

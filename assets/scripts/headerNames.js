@@ -48,7 +48,7 @@ const headerNames = {
 			"World's best boss",
 			"{username} is the smartest boss!",
 		],
-		night: ["Time for your office to sleep", "{name}, you should get some sleep now"],
+		night: ["Time for your office to sleep", "{username}, you should get some sleep now", "{username}, Stop Working"],
 	},
 	student: {
 		morning: [
