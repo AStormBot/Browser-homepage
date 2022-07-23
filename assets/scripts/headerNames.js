@@ -55,8 +55,13 @@ const headerNames = {
 			"Time to make your backpack ready!",
 			"Have a great day at school, {username}",
 			"School's waiting for the one and only {username}",
+			"Eat breakfast Better"
 		],
-		afternoon: ["Don't forget to do your homework", "Afternoon, with homworks?"],
+		afternoon: [
+			"Don't forget to do your homework",
+			"Afternoon, with homeworks?",
+			"Your grade is always 20"
+		],
 		evening: [
 			"Write, learn, and teach",
 			"World's smartest student",

@@ -107,6 +107,7 @@
                   aria-describedby="basic-addon1"
                   required
                   id="searchTextField"
+                  autofocus
                 />
               </div>
             </form>
@@ -310,10 +311,15 @@
     <script src="./assets/javascript/setting.js"></script>
     <script src="./assets/javascript/shortcut.js"></script>
     <script src="./assets/javascript/check.js"></script>
+    <script src="./assets/javascript/link.js"></script>
     <script>
       document.getElementById("floatingInput").value = localStorage.getItem("user-name") || "";
       document.getElementById("animation-type").value = localStorage.getItem("user-animation") || "";
       document.getElementById("animation-text").value = localStorage.getItem("animation-text") || "";
+
+      for (let i = 0; i < 3; i++) {
+        document.getElementById(`${i + 1}-pic`).value = localStorage.getItem(`${i}-pic`);
+      }
     </script>
   </body>
 </html>
