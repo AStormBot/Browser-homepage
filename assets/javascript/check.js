@@ -24,6 +24,7 @@ if (localStorage.getItem('Text') === 'false') {
     document.getElementById('Header-name').style.display = 'none';
 }
 
+
 // functions
 function role_toggle(value) {
     console.log('This function called')

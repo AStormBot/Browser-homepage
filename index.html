@@ -30,7 +30,9 @@
     </style>
   </head>
   <body>
-    <div class="body position-absolute w-100 h-100" id="body"></div>
+    <div class="body position-absolute w-100 h-100" id="body">
+      <img src="https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN">
+    </div>
     <div style="width: 100%; height: 100%; position: absolute">
       <div class="row text-light">
         <div class="col-3">
@@ -303,23 +305,19 @@
     <script src="assets/javascript/weather.js"></script>
     <script src="./assets/javascript/timer.js"></script>
     <script src="./assets/javascript/toolbar.js"></script>
-    <script src="./assets/javascript/background.js"></script>
+<!--    <script src="./assets/javascript/background.js"></script>-->
     <script src="./assets/javascript/results.js"></script>
     <script src="./assets/javascript/version.js"></script>
     <script src="assets/scripts/headerNames.js"></script>
     <script src="assets/javascript/animation.js"></script>
     <script src="./assets/javascript/setting.js"></script>
     <script src="./assets/javascript/shortcut.js"></script>
-    <script src="./assets/javascript/check.js"></script>
     <script src="./assets/javascript/link.js"></script>
     <script>
       document.getElementById("floatingInput").value = localStorage.getItem("user-name") || "";
       document.getElementById("animation-type").value = localStorage.getItem("user-animation") || "";
       document.getElementById("animation-text").value = localStorage.getItem("animation-text") || "";
-
-      for (let i = 0; i < 3; i++) {
-        document.getElementById(`${i + 1}-pic`).value = localStorage.getItem(`${i}-pic`);
-      }
     </script>
+    <script src="./assets/javascript/check.js"></script>
   </body>
 </html>
