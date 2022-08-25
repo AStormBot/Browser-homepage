@@ -59,7 +59,7 @@ function weather_check(e) {
 				const li = document.createElement("li");
 				li.classList.add("city");
 				const markup = `
-<div class="card rounded-3 mb-3" style="max-width: 540px; backdrop-filter: blur(2px)">
+<div class="card rounded-3 mb-3" style="max-width: 540px; backdrop-filter: blur(12px)">
                 <div class="row g-0">
             
                   <div class="col-6 text-light">
