@@ -24,6 +24,15 @@ if (localStorage.getItem('Text') === 'false') {
     document.getElementById('Header-name').style.display = 'none';
 }
 
+if (localStorage.getItem('clock_check') === "false") {
+    document.getElementById('clock-check').checked = false;
+}
+
+if (localStorage.getItem('Bing') === 'false') {
+    document.getElementById('Text').checked = false;
+    background();
+}
+
 
 // functions
 function role_toggle(value) {
