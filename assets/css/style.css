@@ -233,11 +233,11 @@ body {
     align-items: center;
     justify-content: center;
     margin: 40px;
-    border: 12px solid #d2d1d1;
     border-radius: 50%;
     background: linear-gradient(
-        145deg, #d5d5d5, #ebe9e9
+        180deg, rgba(32, 32, 32, 0.36), rgba(35, 35, 35, 0.22)
     );
+    backdrop-filter: blur(12px);
     z-index: 9999;
 }
 
