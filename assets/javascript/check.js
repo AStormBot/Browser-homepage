@@ -9,9 +9,9 @@ if (localStorage.getItem('weather-check') === 'false') {
     document.getElementById('weather').style.display = 'none';
 }
 
-if (localStorage.getItem('search-bar') === 'false') {
-    document.getElementById('search-bar').checked = false;
-    document.getElementById('search-time').style.display = 'none';
+if (localStorage.getItem('clock-check') === 'false') {
+    document.getElementById('clock-check').checked = false;
+    document.getElementById('clock').style.display = 'none';
 }
 
 if (localStorage.getItem('search-bar') === 'false') {
@@ -27,7 +27,7 @@ if (localStorage.getItem('Text') === 'false') {
 
 // functions
 function role_toggle(value) {
-    console.log('This function called')
+    console.log('This function called');
     if (!document.getElementById(value).checked) localStorage.setItem(value, 'false');
     else localStorage.setItem(value, 'true');
 }
