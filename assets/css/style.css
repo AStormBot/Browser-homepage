@@ -140,10 +140,13 @@ li {
         width: 400px;
         height: 300px;
     }
-}
-@media (max-width: 800px) {
     #weather {
-        top: 50%;
+        top: 40%;
+        right: 0;
+    }
+    #clock {
+        position: absolute;
+        top: 60%;
         right: 0;
     }
 }
