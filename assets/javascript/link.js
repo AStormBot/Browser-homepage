@@ -1,6 +1,6 @@
 let value = document.getElementById('searchTextField').value;
 
-const outputs = ['.com', '.co', '.info', '.shop', '.ir', '.io', '.net'];
+const outputs = ['.com', '.fm', '.info', '.shop', '.ir', '.io', '.net'];
 const inputs = ['https://', 'http://', 'file://']
 
 document.getElementById("searchTextField").addEventListener("keypress", myFunction);
