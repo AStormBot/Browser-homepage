@@ -39,8 +39,50 @@
           <div class="row justify-content-between position-relative">
             <div class="col-1 h-100">
               <!--Apps icon-->
-              <div class="row position-absolute top-50" id="suggest" style="width: 50px">
-                <button class="col btn border-0" id="timer">
+              <div class="position-absolute top-50" id="suggest" style="width: 50px">
+                <div class="row">
+                  <div class="col-8">
+                    <button class="col btn border-0" id="timer">
+                      <i class="bi bi-stopwatch-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8" style="margin-top: calc(var(--my-height) / 6);">
+                    <button class="col btn border-0" id="calendar">
+                      <i class="bi bi-calendar-date-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8" style="margin-top: calc(var(--my-height) / 6);">
+                    <button class="col btn border-0" id="to-do">
+                      <i class="bi bi-check-all"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8" style="margin-top: calc(var(--my-height) / 6);">
+                    <button class="col btn border-0" id="note">
+                      <i class="bi bi-sticky-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-8" style="margin-top: calc(var(--my-height) / 6);">
+                    <button
+                            class="col btn border-0"
+                            id="settings"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample"
+                    >
+                      <i class="bi bi-gear-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- <button class="col btn border-0" id="timer">
                   <i class="bi bi-stopwatch-fill"></i>
                 </button>
                 <button class="col btn border-0" id="calendar">
@@ -61,7 +103,7 @@
                   aria-controls="offcanvasExample"
                 >
                   <i class="bi bi-gear-fill"></i>
-                </button>
+                </button> -->
               </div>
             </div>
             <div class="col-9 position-relative h-100">
@@ -340,6 +382,8 @@
     <script src="./assets/javascript/shortcut.js"></script>
     <script src="./assets/javascript/link.js"></script>
     <script>
+      document.getElementById('suggest').style.height = `${screen.height / 2}px`;
+      document.querySelector(':root').style.setProperty('--my-height', `${screen.height / 2}px`)
       document.getElementById("floatingInput").value = localStorage.getItem("user-name") || "";
       document.getElementById("animation-type").value = localStorage.getItem("user-animation") || "";
       document.getElementById("animation-text").value = localStorage.getItem("animation-text") || "";

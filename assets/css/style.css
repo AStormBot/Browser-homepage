@@ -6,13 +6,7 @@ body {
     overflow-y: hidden;
 }
 #suggest {
-    flex-direction: column;
-    gap: 5em;
-    padding: 8px;
-    text-align: center;
-    text-justify: distribute-center-last;
-    top: 50%;
-    transform: translateY(50%);
+    transform: translate(50%, 50%);
     background: var(--colors-background);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
