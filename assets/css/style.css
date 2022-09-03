@@ -319,3 +319,43 @@ body {
 .hide {
     display: none;
 }
+#cps {
+    height: 450px;
+    width: 90%;
+    position: relative;
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    background: linear-gradient(185deg, rgba(63, 62, 62, 0.29) -10%, rgba(28, 28, 28, 0.24) 100%);
+    padding: 3rem;
+}
+#cps h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9a9a9a;
+    width: 80%;
+    text-align: center;
+}
+#cps .brobro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: none;
+    color: white;
+}
+#cps .input-group {
+    height: 100%;
+}
+#cps .input-group > button {
+    background: #8a8a8a30;
+    backdrop-filter: blur(5px);
+    border: none!important;
+    outline: none!important;
+    color: white;
+}
+#cps #button {
+
+}
