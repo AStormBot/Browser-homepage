@@ -333,7 +333,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #9a9a9a;
+    color: #dad3d3;
     width: 80%;
     text-align: center;
 }
@@ -355,7 +355,22 @@ body {
     border: none!important;
     outline: none!important;
     color: white;
+    width: 50%;
+    transition: 350ms width ease-out;
 }
-#cps #button {
-
+#cps .form-control {
+    flex: none!important;
+}
+#cps-cps {
+    width: 0!important;
+    padding: 0!important;
+}
+.cps-show button {
+    width: 25%!important;
+}
+.cps-show #cps-cps {
+    width: 50%!important;
+    padding: .375rem .75rem!important;
+    transition-delay: 30ms
+;
 }

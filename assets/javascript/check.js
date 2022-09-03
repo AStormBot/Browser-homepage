@@ -24,14 +24,21 @@ if (localStorage.getItem('Text') === 'false') {
     document.getElementById('Header-name').style.display = 'none';
 }
 
-if (localStorage.getItem('clock_check') === "false") {
+if (localStorage.getItem('clock_cheAck') === "false") {
     document.getElementById('clock-check').checked = false;
 }
 
-if (localStorage.getItem('Bing') === 'false') {
-    document.getElementById('Text').checked = false;
-    background();
+if (localStorage.getItem('background-type')) {
+    document.getElementById('background-type').value = localStorage.getItem('background-type');
+    if (localStorage.getItem('background-type') === 'image') {
+        background();
+    }
+    else if (localStorage.getItem('background-type') === 'motion') {
+        motion()
+
+    }
 }
+
 
 
 // functions

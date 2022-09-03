@@ -29,6 +29,7 @@ function startUp() {
         time.html(times / 250);
         if (times >= 1250) {
             clearInterval(cps_worker);
+            $('#cps .input-group').addClass('cps-show');
             finished(clicks_count, times, cps);
         }
     }, 1)

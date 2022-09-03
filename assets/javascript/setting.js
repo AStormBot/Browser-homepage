@@ -3,7 +3,9 @@ function save_setting() {
     const user_name = document.getElementById("floatingInput").value;
     const user_animation = document.getElementById("animation-type").value;
     const text_animation = document.getElementById("animation-text").value;
+    const background_typed = document.getElementById('background-type').value;
 
+    local.setItem('background-type', background_typed);
     local.setItem("user-name", user_name);
     local.setItem("user-animation", user_animation);
     local.setItem('animation-text', text_animation)
