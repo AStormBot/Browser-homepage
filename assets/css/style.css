@@ -23,7 +23,7 @@ body {
     padding: 15px;
     border-radius: 15px;
     backdrop-filter: blur(12px);
-    background: linear-gradient(to left bottom, rgba(40, 40, 40, 0.4), rgba(100, 100, 100, 0.1));
+    /*background: linear-gradient(to left bottom, rgba(40, 40, 40, 0.1), rgba(100, 100, 100, 0.1));*/
 }
 .blured pre {
     color: white;
