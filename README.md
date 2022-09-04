@@ -7,6 +7,7 @@ So I hope you like it.
 1. Download File
 2. Extract it
 3. Open index.html
+4. then open setting and setup your data (it's too ez)
 
 ### Options:
 - [x] Beautiful 
@@ -14,6 +15,8 @@ So I hope you like it.
 - [x] Calendar
 - [x] Weather
 - [x] Note List
+- [x] Clock
+- [x] CPS test (only on game role)
 - [x] Random Background
 - [x] Welcome Text <br>
 And ... `(Download to get more)`
