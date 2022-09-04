@@ -5,6 +5,12 @@ if (localStorage.getItem('animation-text') === "gamer") {
 
 function finished(clicks_count, times, cps) {
     cps.html(clicks_count * 2 / 10);
+    setTimeout(() => {
+
+        $('h3#button').html('Click to restart');
+        $('#cps-blocked').css('display', 'block');
+    }, 3000)
+
 }
 
 function startUp() {
@@ -12,7 +18,10 @@ function startUp() {
     let times = 0;
     const clicks = $('#cps-clicks');
     const time = $('#cps-time');
-    const cps = $('#cps-cps')
+    const cps = $('#cps-cps');
+
+    $('#somethingforcps').removeClass('cps-show');
+    cps.html('');
 
     document.getElementById('cps').addEventListener('click', () => {
         $('#cps #cps-blocked').css('display', 'none');
