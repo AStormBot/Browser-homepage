@@ -1,0 +1,11 @@
+{
+  "name": "Browser Homepage",
+  "version": "1.0.0",
+  "description": "make your Browser Homepage more beautiful",
+  "manifest_version": 3,
+  "author": "AStorm",
+  "action":{
+    "default_popup": "./index.html",
+    "default_title": "Latest Covid Report"
+  }
+}

@@ -28,6 +28,6 @@ const text = randomMessage.replaceAll("{username}", username);
 for (let i = 0; i < text.length; i++) {
 	welcomeElement.innerHTML += `<pre class="${animation} float-start" style="animation-delay: ${
 		i * 50
-	}ms">${text[i]}</pre>`;
+	}ms; font-family: 'Helvetica Neue', sans-serif;">${text[i]}</pre>`;
 }
 

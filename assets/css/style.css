@@ -24,6 +24,8 @@ body {
     padding: 15px;
     border-radius: 15px;
     backdrop-filter: blur(12px);
+    /*font-size: 65px;*/
+    font-weight: bolder;
     /*background: linear-gradient(to left bottom, rgba(40, 40, 40, 0.1), rgba(100, 100, 100, 0.1));*/
 }
 .blured pre {
