@@ -10,7 +10,17 @@ const headerNames = {
 			"You’re the sunrise with attitude, {username}.",
 			"The day’s got shit coming, but you’re coming harder.",
 			"Be the reason this day regrets messing with you, {username}.",
-			"If the world’s on fire, you better look hot while walking through it."
+			"If the world’s on fire, you better look hot while walking through it.",
+			"Morning wood or morning rage? Why not both, {username}?",
+			"Another day, another chance to fuck up gracefully.",
+			"Your alarm clock is just jealous of your beauty sleep, {username}.",
+			"Don't just wake up, wake up and conquer that damn pillow.",
+			"The early bird gets the worm, but the late bird gets to sleep in. Choose wisely, {username}.",
+			"Let's be honest, you're only up because the coffee machine threatened you.",
+			"Your bed misses you already, but the world needs your chaos, {username}.",
+			"Fuck the snooze button. You're too important for that shit.",
+			"Good morning, {username}. May your coffee be strong and your patience non-existent.",
+			"The sun's out, and so should your attitude, {username}."
 		],
 		"afternoon": [
 			"Afternoon slump? Shove it. You’re a damn machine, {username}.",
@@ -21,7 +31,17 @@ const headerNames = {
 			"Run this shit like it owes you rent.",
 			"Sexy and productive—how the hell do you do it, {username}?",
 			"Even the sun’s jealous of your afternoon glow.",
-			"You're like a damn hurricane in a pencil skirt—or no skirt."
+			"You're like a damn hurricane in a pencil skirt—or no skirt.",
+			"Midday madness? You thrive in that shit, {username}.",
+			"Is it too early for a whiskey? Asking for a friend... who is you.",
+			"Don't let the afternoon drag you down, drag it by the hair instead, {username}.",
+			"Your energy is a weapon. Wield it wisely, or just wreak havoc.",
+			"Another meeting? More like another opportunity to look bored and hot, {username}.",
+			"You're not just getting through the day, you're making it your bitch.",
+			"The only thing slumping is the competition, {username}.",
+			"Keep that head held high, and that ass tighter, {username}.",
+			"You're the main event of this afternoon, {username}. Don't let anyone tell you otherwise.",
+			"Feeling good? Great. Now go make someone else feel bad, {username}."
 		],
 		"evening": [
 			"Evening's here, {username}. Drop the stress and pick up the sex appeal.",
@@ -30,7 +50,19 @@ const headerNames = {
 			"Today’s done. Now light a candle, or light someone up.",
 			"That ass deserves a sofa, a drink, and no responsibility.",
 			"You’re still hot after all this bullshit—damn, {username}.",
-			"Take a breath. Or take someone’s breath."
+			"Take a breath. Or take someone’s breath.",
+			"The day's over, but your reign isn't, {username}.",
+			"Unwind, {username}. Or wind someone up. Your call.",
+			"Your evening plans should involve maximum pleasure and minimal pants.",
+			"Let the stress melt away like ice in a strong drink, {username}.",
+			"You've earned this relaxation, or this wild night, {username}.",
+			"The night is young, and so is your desire for chaos, {username}.",
+			"Time to trade your responsibilities for some reckless abandon, {username}.",
+			"Did someone say 'Netflix and chill'? Or 'Netflix and thrill'?",
+			"Your evening glow is brighter than any city lights, {username}.",
+			"End the day with a bang, or a whimper, depending on your mood, {username}.",
+			"You're not just ending the day, you're setting the stage for something epic.",
+			"Cheers to surviving another day, {username}. Now go get what you deserve."
 		],
 		"night": [
 			"Another night, {username}, and you're still not in bed? Go fuckin' sleep already.",
@@ -42,7 +74,16 @@ const headerNames = {
 			"The moon’s up. The world’s quiet. Your mind? A damn battlefield.",
 			"Go to sleep, {username}. You’ve already fucked the day enough.",
 			"No more screens. Just close your eyes and let that chaos shut the fuck off.",
-			"The night wants to wrap its dark arms around you, {username}. Let it."
+			"The night wants to wrap its dark arms around you, {username}. Let it.",
+			"Your dreams are probably as wild as your waking life, {username}.",
+			"The only thing you should be counting tonight is sheep, or orgasms.",
+			"Sleep tight, {username}. Don't let the bed bugs bite... unless they're hot.",
+			"The night is for secrets and desires, {username}. Indulge.",
+			"Your body needs rest, but your mind is probably still plotting world domination.",
+			"Let the darkness embrace you, {username}. You've earned this oblivion.",
+			"If you can't sleep, blame it on your own damn hotness, {username}.",
+			"The night is a canvas, and your dreams are the masterpiece, {username}.",
+			"Close your eyes, {username}. The monsters under your bed are just lonely."
 		]
 	},
 	"student": {
@@ -58,7 +99,15 @@ const headerNames = {
 			"Survive the day and maybe sext during lunch.",
 			"Go be that hot nerd with the deadly grades, {username}.",
 			"No sleep? Still hotter than anyone in class.",
-			"{username}, rise like caffeine-fueled chaos."
+			"{username}, rise like caffeine-fueled chaos.",
+			"Another day of pretending to care. You got this, {username}.",
+			"Your brain cells are crying, but your spirit is still a rebel, {username}.",
+			"Don't just go to class, make class regret it, {username}.",
+			"The only thing brighter than your future is your eye bags, {username}.",
+			"Coffee is your co-pilot, chaos is your destination, {username}.",
+			"You're not just a student, you're a goddamn icon of sleep deprivation.",
+			"May your lectures be short and your attention span even shorter, {username}.",
+			"Time to unleash your inner academic demon, {username}."
 		],
 		"afternoon": [
 			"Homework can fuck off. You're getting laid by knowledge, {username}.",
@@ -69,7 +118,17 @@ const headerNames = {
 			"You’re the reason the school firewall crashes, {username}.",
 			"Grades? Meh. That ass? Certified A+.",
 			"You could sleep through this lecture and still be iconic.",
-			"Doodle in the margins and still score better than half the class."
+			"Doodle in the margins and still score better than half the class.",
+			"Mid-day crisis? Or just mid-day thirst, {username}?",
+			"Another group project? Time to carry some dead weight, {username}.",
+			"The only thing getting an F today is your patience, {username}.",
+			"You're not procrastinating, you're strategically delaying greatness, {username}.",
+			"Is it 5 o'clock yet? Asking for your liver, {username}.",
+			"Your brain is fried, but your sass is still sizzling, {username}.",
+			"Don't let the professors dim your shine, {username}. Blind them instead.",
+			"You're a scholar, a rebel, and a damn good looking mess, {username}.",
+			"The only thing you're studying is how to escape this hellhole, {username}.",
+			"Afternoon classes are just a suggestion, right, {username}?"
 		],
 		"evening": [
 			"School’s over. Time to take off the innocent act, {username}.",
@@ -78,7 +137,19 @@ const headerNames = {
 			"You survived the day. Now survive this pile of bullshit assignments.",
 			"Sexy and exhausted. A scholar's curse.",
 			"Homework? More like hellwork. Light it up, {username}.",
-			"Study break or mental breakdown—either way, you’re hot."
+			"Study break or mental breakdown—either way, you’re hot.",
+			"Your brain needs a break, but your body is ready for action, {username}.",
+			"Time to trade textbooks for tequila, {username}.",
+			"The only thing you're chasing tonight is a good time, {username}.",
+			"You're not just unwinding, you're unravelling in the best way possible.",
+			"Let the evening be your escape, {username}. Or your next adventure.",
+			"Did someone say 'party'? Because your grades certainly aren't, {username}.",
+			"You've earned the right to be a little reckless tonight, {username}.",
+			"Your mind is tired, but your spirit is still a wild child, {username}.",
+			"The only thing you're studying tonight is how to have fun, {username}.",
+			"Evening vibes: chaos, comfort, and maybe a little bit of sin, {username}.",
+			"You're a masterpiece of exhaustion and pure potential, {username}.",
+			"Don't forget to hydrate, {username}. With something stronger than water."
 		],
 		"night": [
 			"You did your best today. Now lie down and let the world shut the fuck up.",
@@ -89,7 +160,17 @@ const headerNames = {
 			"You’re not a machine, {username}. But you’re hot enough to be factory-made.",
 			"Wrap yourself in a blanket. Or someone. Your choice.",
 			"Fuck the deadlines. It’s sleep o’clock, {username}.",
-			"You’re more than that GPA. You’re a goddamn masterpiece with a sleep deficit."
+			"You’re more than that GPA. You’re a goddamn masterpiece with a sleep deficit.",
+			"The only thing you're pulling an all-nighter for is pleasure, {username}.",
+			"Your dreams are probably wilder than your actual life, {username}.",
+			"Sleep like a baby, or like a rockstar, {username}. Your call.",
+			"The night is for healing, or for plotting your next move, {username}.",
+			"Don't let the academic stress follow you to bed, {username}. Kick it out.",
+			"You're a survivor, {username}. Now go get some damn rest.",
+			"Your body is tired, but your soul is still a fire, {username}.",
+			"The only thing you're cramming tonight is sleep, {username}.",
+			"Sweet dreams, {username}. May they be filled with less homework and more fun.",
+			"You've conquered the day, now conquer the night, {username}."
 		]
 	},
 	"boss": {
@@ -97,19 +178,37 @@ const headerNames = {
 			"The boardroom can wait till you finish looking hot as hell, {username}.",
 			"Command respect, or just command coffee first.",
 			"Another day to dominate—no pants required, {username}.",
-			"You run shit, even in bedhead."
+			"You run shit, even in bedhead.",
+			"Wake up and smell the power, {username}. It's intoxicating.",
+			"Your presence alone is a power move, {username}.",
+			"Don't just lead, {username}, inspire fear and admiration.",
+			"The only thing you're chasing this morning is success, and maybe a good fuck.",
+			"Your empire awaits, {username}. Go build it, or expand it.",
+			"Rise and shine, {username}. The world needs your ruthless efficiency."
 		],
 		"afternoon": [
 			"Meetings? More like motherfucking interruptions.",
 			"Crush those targets and flash that power stare, {username}.",
 			"CEO of fuck-you energy right here.",
-			"You're not just the boss. You're the fantasy HR warns about."
+			"You're not just the boss. You're the fantasy HR warns about.",
+			"Another deal to close, another soul to conquer, {username}.",
+			"Your decisions are sharp, your wit is sharper, {username}.",
+			"Don't just delegate, {username}, dominate.",
+			"The only thing you're taking orders from is your ambition, {username}.",
+			"You're a force of nature, {username}. Let them tremble.",
+			"Midday grind? You eat that shit for breakfast, {username}."
 		],
 		"evening": [
 			"Clock out and vibe. Or clock into something naughty, {username}.",
 			"You made the hard calls. Now make the soft landing.",
 			"Emails off. Wine on. Legs up.",
-			"Running a business ain't as hard as running from rest. Take it."
+			"Running a business ain't as hard as running from rest. Take it.",
+			"The day's work is done, but your charm is still working overtime, {username}.",
+			"You've earned this indulgence, {username}. Go get it.",
+			"Trade your power suit for something more comfortable, or less, {username}.",
+			"The night is your playground, {username}. Play dirty.",
+			"You're not just unwinding, you're reloading for tomorrow's battle, {username}.",
+			"Cheers to another successful day of being a total badass, {username}."
 		],
 		"night": [
 			"Stop fucking working, {username}. Your desk won't miss you.",
@@ -119,7 +218,9 @@ const headerNames = {
 			"You deserve a night of nothing. Maybe some cuddles. Or something dirtier.",
 			"Get off the damn Slack and onto your mattress.",
 			"Big deals can wait. Your mental health can’t, {username}.",
-			"You’re hot when you're focused. You're hotter when you're asleep and not emailing."
+			"You’re hot when you're focused. You're hotter when you're asleep and not emailing.",
+			"Let the silence of the night soothe your savage beast, {username}.",
+			"Your empire can wait till morning, {username}. Sleep now, conquer later."
 		]
 	},
 	"gamer": {
@@ -128,28 +229,48 @@ const headerNames = {
 			"Don’t miss the drop, miss breakfast instead.",
 			"You’re a spawn point of destruction.",
 			"Wipe the crust off your eyes and wreck noobs.",
-			"Joystick or joyride? It’s too early to choose."
+			"Joystick or joyride? It’s too early to choose.",
+			"Another day, another chance to dominate the leaderboard, {username}.",
+			"Your enemies are waiting, {username}. Don't keep them waiting too long.",
+			"The only thing you're grinding for is victory, {username}.",
+			"Coffee and headshots. That's your morning routine, {username}.",
+			"Rise and frag, {username}. The digital world awaits your wrath."
 		],
 		"afternoon": [
 			"Another match? Fuck yeah. Who needs real life?",
 			"Loot and load, legend.",
 			"Caffeine, rage, and your hot self? Lethal trio.",
 			"Slay them with bullets or booty. Up to you.",
-			"If you’re not top fragging, you’re top teasing."
+			"If you’re not top fragging, you’re top teasing.",
+			"Midday gaming session? The only way to live, {username}.",
+			"Your killstreak is longer than your attention span, {username}.",
+			"Don't just play the game, {username}, become the game.",
+			"The only thing you're losing is sleep, and maybe your virginity to a boss fight.",
+			"You're not addicted, you're just committed, {username}."
 		],
 		"evening": [
 			"Tired hands, hot win streak. Worth it.",
 			"Victory tastes better with a little moaning.",
 			"Trash talk and tight shorts. A combo.",
 			"End the day like you end lobbies—in flames and finesse.",
-			"Your KD ratio is only rivaled by your sex appeal."
+			"Your KD ratio is only rivaled by your sex appeal.",
+			"Evening gaming is peak performance, {username}.",
+			"The only thing you're dropping is jaws, and maybe some loot, {username}.",
+			"Your enemies are crying, and you're just getting started, {username}.",
+			"Game on, {username}. The night is young and full of noobs.",
+			"You're not just playing, you're performing a digital symphony of destruction."
 		],
 		"night": [
 			"Your eyes are bloodshot, your heart’s racing, and you still look sexy as fuck.",
 			"It’s 3AM, and you're gaming like it’s foreplay.",
 			"Whisper sweet nothings to your headset mic. Or scream like a goddamn legend.",
 			"Let the light of your monitor reflect off your sexy exhaustion.",
-			"One more match? Nah. One more climax of chaos."
+			"One more match? Nah. One more climax of chaos.",
+			"The night is long, and your gaming session is longer, {username}.",
+			"Sleep is for the weak, and you're anything but, {username}.",
+			"Your fingers are tired, but your spirit is still craving more, {username}.",
+			"Don't just dream of victory, {username}, earn it in the dark.",
+			"You're a nocturnal beast, {username}. Embrace the darkness and dominate."
 		]
 	},
 	"programmer": {
@@ -163,7 +284,16 @@ const headerNames = {
 			"Semicolons trembling from your big brain energy.",
 			"You don’t wake up, {username}, you boot up with a fucking roar.",
 			"Your syntax slaps harder than reality.",
-			"Debug your life while looking like a goddamn snack."
+			"Debug your life while looking like a goddamn snack.",
+			"Another day, another chance to break production. You got this, {username}.",
+			"Your commit history is kinkier than your browser history, {username}.",
+			"May your code compile on the first try, and your coffee be strong, {username}.",
+			"You're not just coding, you're crafting digital orgasms, {username}.",
+			"The only thing you're pushing this morning is code, and maybe some boundaries.",
+			"Your brain is a supercomputer, and it's running on pure sass, {username}.",
+			"Don't just write code, {username}, make it sing... or scream.",
+			"You're the architect of chaos, {username}. Build something beautiful, or destructive.",
+			"Rise and code, {username}. The matrix awaits your genius."
 		],
 		"afternoon": [
 			"Hit those APIs like they owe you orgasmic performance.",
@@ -174,7 +304,16 @@ const headerNames = {
 			"Let that DOM submit to your damn will.",
 			"You're a dirty little debugger with a genius streak.",
 			"Push your code and push their damn buttons.",
-			"Your brain’s a goddamn server and it’s running hot."
+			"Your brain’s a goddamn server and it’s running hot.",
+			"Midday bug hunt? You're the predator, {username}.",
+			"Your code is cleaner than your conscience, {username}.",
+			"Another pull request? Time to show them who's boss, {username}.",
+			"You're not just solving problems, you're seducing solutions, {username}.",
+			"The only thing you're optimizing is your own damn pleasure, {username}.",
+			"Your keyboard is your weapon, {username}. Wield it with precision and filth.",
+			"Don't just write functions, {username}, make them perform.",
+			"You're a coding god, {username}. Let them worship your algorithms.",
+			"Afternoon sprints? You're built for speed and chaos, {username}."
 		],
 		"evening": [
 			"Sit back, unzip your hoodie, and seduce some functions.",
@@ -184,7 +323,16 @@ const headerNames = {
 			"Hard drive? You’re the cause, {username}.",
 			"You touch more lines of code than lovers—tragic and hot.",
 			"That stack overflow ain’t accidental—it’s your sex appeal.",
-			"Leave the bugs gasping. You’re a one-dev wrecking crew."
+			"Leave the bugs gasping. You’re a one-dev wrecking crew.",
+			"Evening coding sessions are where the magic happens, {username}.",
+			"Your brain is still buzzing, and so should your fingers, {username}.",
+			"Don't just deploy, {username}, dominate the digital landscape.",
+			"You're a night owl, a code connoisseur, and a damn fine specimen, {username}.",
+			"The only thing you're debugging tonight is your own damn desires, {username}.",
+			"Your code is a reflection of your wild mind, {username}. Let it shine.",
+			"You're not just fixing bugs, you're delivering digital pleasure, {username}.",
+			"The night is young, and your coding passion is even younger, {username}.",
+			"Unwind with some late-night commits, {username}. It's therapeutic."
 		],
 		"night": [
 			"Keyboard beneath your fingers, chaos in your mind, {username}—pure fuckin’ power.",
@@ -195,10 +343,16 @@ const headerNames = {
 			"You're the reason tabs stay open—and legs too, probably.",
 			"Typing late? Nah. You’re teasing the compiler into moaning.",
 			"Crash the system, break the rules, fuck the clock.",
-			"Your repo is dirty, your mind’s filthier, and that’s hot as hell."
+			"Your repo is dirty, your mind’s filthier, and that’s hot as hell.",
+			"The only thing you're dreaming about is clean code and dirty thoughts, {username}.",
+			"Your brain is still running queries, even in your sleep, {username}.",
+			"Night coding is a spiritual experience, {username}. Embrace the darkness.",
+			"You're a nocturnal programmer, a digital vampire, and a damn legend, {username}.",
+			"The only thing you're optimizing now is your own damn pleasure, {username}.",
+			"Your code is your legacy, {username}. Make it a scandalous one.",
+			"Don't just sleep, {username}, dream in algorithms and digital desires.",
+			"The night whispers secrets, and your code responds with power, {username}.",
+			"You've pushed limits all day, now push them in your dreams, {username}."
 		]
 	}
-
 }
-
-
