@@ -1,5 +1,5 @@
 function save_setting() {
-    const local = localStorage;
+    const local = window.localStorage;
     const user_name = document.getElementById("floatingInput").value;
     const user_animation = document.getElementById("animation-type").value;
     const text_animation = document.getElementById("animation-text").value;

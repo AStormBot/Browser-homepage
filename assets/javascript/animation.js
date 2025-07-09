@@ -1,8 +1,8 @@
 let welcomeElement = document.getElementById("Header-name");
 const hour = new Date().getHours();
-const username = localStorage.getItem("user-name") || "Dear";
+const username = localStorage.getItem("user-name") || "AStorm";
 const animation = localStorage.getItem("user-animation") || "typing-animation";
-const job = localStorage.getItem("animation-text") || "normal";
+const job = localStorage.getItem("animation-text") || "gamer";
 let relatedMessages;
 
 function joinArrays(time) {

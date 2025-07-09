@@ -1,11 +1,21 @@
 {
-  "name": "Browser Homepage",
-  "version": "1.0.0",
-  "description": "make your Browser Homepage more beautiful",
   "manifest_version": 3,
-  "author": "AStorm",
-  "action":{
-    "default_popup": "./index.html",
-    "default_title": "Latest Covid Report"
+  "name": "Custom Homepage",
+  "version": "1.0",
+  "description": "Custom Html File to Make New Tab Feel Fresh and Sexy :)",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.js", "*.css", "*.jpg", "*.png", "*.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "128": "assets/Icons/favicon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
   }
 }

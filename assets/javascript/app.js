@@ -9,7 +9,7 @@ const html_outputs = {
                         </div>
                         <div class="row justify-content-center my-5">
                             <div class="col-3">
-                                <button class="btn btn-dark text-light px-3 py-2" id="submit-timer" onclick="start()">Start</button>
+                                <button class="btn btn-dark text-light px-3 py-2" id="submit-timer">Start</button>
                             </div>
                         </div>
                     </div>`,
@@ -17,7 +17,7 @@ const html_outputs = {
 		'<iframe src="./assets/iframes/calendar.html" style="border-radius: 12px;height: 500px;"></iframe>',
 	todo: `<iframe src="./assets/iframes/todo/todo.html" style="height: 450px; border-radius: 12px;" frameborder="0"></iframe>`,
 	note: "<textarea id='note-text' placeholder='Type your text in this section...' style='height: 400px; margin-top: 50%; transform: translateY(-50%)' class='text-light border-0 rounded-3 textarea'></textarea>",
-	cps: "<div id='cps'><div id='cps-blocked' onclick='startUp()' style='position: absolute;top: 0; left: 0; height: 100%; width: 100%;'><h3 id='button' >Click To Start</h3></div><div class='brobro'> <div class='input-group' id='somethingforcps'>" +
+	cps: "<div id='cps'><div id='cps-blocked' style='position: absolute;top: 0; left: 0; height: 100%; width: 100%;'><h3 id='button' >Click To Start</h3></div><div class='brobro'> <div class='input-group' id='somethingforcps'>" +
 		"<button class='form-control' id='cps-time' disabled></button>" +
 		"<button class='form-control' id='cps-cps' disabled></button>" +
 		"<button class='form-control' id='cps-clicks' disabled></button></div></div></div>"
@@ -40,6 +40,7 @@ $("#timer").click(() => {
 		}
 		else {
 			target.html(html_outputs.cps);
+			document.getElementById('cps-blocked').addEventListener('click', () => {startUp()})
 			target.slideDown();
 		}
 		cps_showing = !cps_showing;
@@ -49,6 +50,7 @@ $("#timer").click(() => {
 			target.slideUp();
 		} else {
 			target.html(html_outputs.timer);
+			document.getElementById('submit-timer').addEventListener('click', () => {start()})
 			target.slideDown();
 		}
 		timer_showing = !timer_showing;
