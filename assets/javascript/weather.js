@@ -84,7 +84,7 @@ function weather_check(e) {
 				msg.textContent = "Please search for a valid city 😩";
 			});
 
-		form.reset();
+		// form.reset();
 		input.focus();
 	}
 }

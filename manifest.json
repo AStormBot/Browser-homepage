@@ -6,6 +6,9 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
   "web_accessible_resources": [
     {
       "resources": ["*.js", "*.css", "*.jpg", "*.png", "*.svg"],

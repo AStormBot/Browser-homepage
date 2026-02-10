@@ -2,14 +2,14 @@ let welcomeElement = document.getElementById("Header-name");
 const hour = new Date().getHours();
 const username = localStorage.getItem("user-name") || "AStorm";
 const animation = localStorage.getItem("user-animation") || "typing-animation";
-const job = localStorage.getItem("animation-text") || "gamer";
+const job = localStorage.getItem("animation-text") || "";
 let relatedMessages;
 
 function joinArrays(time) {
 	const defaultValues = headerNames.normal;
 	if (job === "normal") return defaultValues[time];
 
-	return headerNames[job][time].concat(defaultValues[time]);
+	return headerNames[job][time];
 }
 
 if (hour > 6 && hour < 12) {
