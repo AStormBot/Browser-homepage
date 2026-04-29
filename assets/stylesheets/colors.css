@@ -1,0 +1,10 @@
+:root {
+    --text-light: 200, 200, 200;
+    --text-dark: #000000;
+    --border-light: 200, 200, 200;
+    --border-dark: #000000;
+    --bg-light: 200, 200, 200;
+    --bg-lighter: 255, 255, 255;
+    --bg-darker: #000000;
+    --bg-dark: #000000;
+}

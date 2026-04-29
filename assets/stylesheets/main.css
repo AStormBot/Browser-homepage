@@ -1,0 +1,44 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    background: red;
+    font-family: var(--font-stack), sans-serif;
+}
+
+.main {
+    margin: 5% 10%;
+    width: auto;
+    height: 80%;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.search-box {
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column
+}
+
+.search-box h1 {
+    font-size: var(--h1);
+}
+
+.search-box > div {
+    border: 2px solid var(--border-light);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: rgba(var(--bg-light), 0.5);
+}

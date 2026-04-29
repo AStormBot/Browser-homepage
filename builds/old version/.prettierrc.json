@@ -1,0 +1,23 @@
+{
+  "singleQuote": false,
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "printWidth": 150
+      }
+    },
+    {
+      "files": ["*.js", ".ts"],
+      "options": {
+        "printWidth": 100,
+        "useTabs": true,
+        "tabWidth": 5,
+        "semi": true,
+        "quoteProps": "as-needed",
+        "endOfLine": "crlf"
+      }
+    }
+  ]
+}

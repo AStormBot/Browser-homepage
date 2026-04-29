@@ -4,29 +4,21 @@
   "version": "1.0",
   "description": "Custom Html File to Make New Tab Feel Fresh and Sexy :)",
   "chrome_url_overrides": {
-	"newtab": "builds/index.html"
+    "newtab": "index.html"
   },
   "background": {
-	"service_worker": "builds/background.js"
+    "service_worker": "background.js"
   },
   "web_accessible_resources": [
-	{
-	  "resources": [
-		"*.js",
-		"*.css",
-		"*.jpg",
-		"*.png",
-		"*.svg"
-	  ],
-	  "matches": [
-		"<all_urls>"
-	  ]
-	}
+    {
+      "resources": ["*.js", "*.css", "*.jpg", "*.png", "*.svg"],
+      "matches": ["<all_urls>"]
+    }
   ],
   "icons": {
-	"128": "builds/assets/icons/favicon.png"
+    "128": "assets/Icons/favicon.png"
   },
   "content_security_policy": {
-	"extension_pages": "script-src 'self'; object-src 'self';"
+    "extension_pages": "script-src 'self'; object-src 'self';"
   }
 }

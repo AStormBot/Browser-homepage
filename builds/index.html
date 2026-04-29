@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Browser Homepage</title>
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+	<!--    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">-->
+</head>
+
+<body>
+<div id="background-container"></div>
+<audio id="bg-music" loop></audio>
+<div class="media-controls hidden" id="media-controls">
+	<button class="media-btn" id="volume-toggle">
+		<img alt="Volume" height="20" id="volume-icon" src="assets/icons/volume_off.svg" width="20">
+	</button>
+	<div class="media-divider"></div>
+	<button class="media-btn" id="visibility-toggle">
+		<img alt="Visibility" height="20" id="visibility-icon" src="assets/icons/visibility.svg" width="20">
+	</button>
+</div>
+
+<main id="main-grid">
+	<!-- Search Group (Row 1, spans all columns) -->
+	<div class="grid-item" id="search-group">
+		<h1 id="greeting">Hello, AStorm</h1>
+		<div class="search-box">
+			<div class="search-icon">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="11" cy="11" r="8"></circle>
+					<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+				</svg>
+			</div>
+			<input autofocus id="search-input" placeholder="Search With Google" type="text">
+		</div>
+	</div>
+
+	<!-- Left Group (Row 2-3, Col 1) — spans 2 rows -->
+	<div class="grid-item glass-panel collapsed" id="left-group">
+		<button aria-label="Toggle panel" id="left-panel-toggle">
+			<img alt="Toggle" height="20" src="assets/icons/arrow_down.svg" width="20">
+		</button>
+		<div class="clock-section">
+			<div id="big-clock">00:00</div>
+			<div id="quote"></div>
+		</div>
+		<div class="divider"></div>
+		<div class="info-section">
+			<div class="info-row">
+				<span class="icon">📅</span>
+				<span id="date">Date: n/a</span>
+			</div>
+			<div class="info-row">
+				<span class="icon">🌡️</span>
+				<span id="temp">Temp: n/a</span>
+			</div>
+			<div class="info-row">
+				<span class="icon" id="weather-icon">☀️</span>
+				<span id="weather-text">Weather: n/a</span>
+			</div>
+			<div class="info-row">
+				<span class="icon">🌅</span>
+				<span id="sunset">Sunset: n/a</span>
+			</div>
+			<div class="info-row">
+				<span class="icon">📶</span>
+				<span id="ping">Ping: n/a</span>
+				<button class="ping-refresh-btn" id="ping-refresh" title="Refresh Ping">↻</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Note Group (Row 2, Col 3) -->
+	<div class="grid-item glass-panel" id="note-group">
+		<textarea id="note-input" placeholder="Add Notes..." spellcheck="false"></textarea>
+	</div>
+
+	<!-- Apps Group (Row 3, Col 3) -->
+	<div class="grid-item" id="apps-group">
+		<div class="app-grid">
+			<!-- Shortcuts -->
+			<div class="app-btn glass-btn" data-index="0" data-label="+" id="app-1" style="animation-delay: 300ms;">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<line x1="12" x2="12" y1="5" y2="19"></line>
+					<line x1="5" x2="19" y1="12" y2="12"></line>
+				</svg>
+			</div>
+			<div class="app-btn glass-btn" data-index="1" data-label="+" id="app-2" style="animation-delay: 0;">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<line x1="12" x2="12" y1="5" y2="19"></line>
+					<line x1="5" x2="19" y1="12" y2="12"></line>
+				</svg>
+			</div>
+			<div class="app-btn glass-btn" data-index="2" data-label="+" id="app-3" style="animation-delay: 200ms;">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<line x1="12" x2="12" y1="5" y2="19"></line>
+					<line x1="5" x2="19" y1="12" y2="12"></line>
+				</svg>
+			</div>
+
+			<!-- Tools -->
+			<div class="app-btn glass-btn" data-label="Focus" id="btn-timer" style="animation-delay: 400ms;">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="12" cy="12" r="10"></circle>
+					<polyline points="12 6 12 12 16 14"></polyline>
+				</svg>
+			</div>
+			<div class="app-btn glass-btn" data-label="Bookmarks" id="btn-bookmarks"
+				 style="animation-delay: 500ms;">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+					<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+				</svg>
+			</div>
+			<div class="app-btn glass-btn" data-label="Settings" id="btn-settings" style="animation-delay: 100ms;">
+				<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="12" cy="12" r="3"></circle>
+					<path
+							d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+					</path>
+				</svg>
+			</div>
+
+			<!-- Mini-window: Stopwatch -->
+			<div class="mini-window-content" id="mini-stopwatch">
+				<button class="close-mini" data-close="stopwatch">✕</button>
+				<h3>Focus Mode</h3>
+				<div id="stopwatch-display">00:00:00</div>
+				<div id="focus-quote-mini"></div>
+			</div>
+
+			<!-- Mini-window: Settings -->
+			<div class="mini-window-content" id="mini-settings" style="overflow: hidden;">
+				<button class="close-mini" data-close="settings">✕</button>
+				<h3>Settings</h3>
+				<div class="mini-setting-item">
+					<label>Name</label>
+					<input id="setting-name" placeholder="Your Name" type="text">
+				</div>
+				<div class="mini-setting-item inline-row">
+					<label>Background</label>
+					<button class="file-btn" id="bg-upload-btn" style="margin:0;">Choose File</button>
+					<input accept="image/*,video/*" hidden id="setting-bg-upload" type="file">
+				</div>
+				<div class="mini-setting-item inline-row">
+					<label>Music</label>
+					<button class="file-btn" id="music-upload-btn" style="margin:0;">Choose File</button>
+					<input accept="audio/*" hidden id="setting-music-upload" type="file">
+				</div>
+				<div class="mini-setting-item toggle-row">
+					<label for="setting-autoplay">Autoplay</label>
+					<input checked id="setting-autoplay" type="checkbox">
+				</div>
+				<div class="mini-setting-item inline-row">
+					<label>Theme</label>
+					<button class="file-btn" id="setting-theme-btn">Light</button>
+				</div>
+				<div class="mini-setting-item inline-row">
+					<button id="reset-bg-btn" style="margin: 0;">Reset Background</button>
+					<button id="reset-music-btn" style="margin: 0;">Reset Music</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<!-- Modals (shortcut only) -->
+<div class="hidden" id="modal-overlay"></div>
+
+<div class="modal hidden" id="shortcut-modal">
+	<h2>Add Shortcut</h2>
+	<div class="setting-item">
+		<label>Name</label>
+		<input id="shortcut-name" placeholder="Name" type="text">
+	</div>
+	<div class="setting-item">
+		<label>URL</label>
+		<input id="shortcut-url" placeholder="https://example.com" type="text">
+	</div>
+	<button id="save-shortcut-btn">Save</button>
+	<button class="close-btn" id="close-shortcut-btn">Cancel</button>
+</div>
+
+<script src="assets/javascript/app.js" type="module"></script>
+</body>
+
+</html>
