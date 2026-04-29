@@ -1,0 +1,2 @@
+import React,{useEffect,useState} from 'react';
+export function PingWidget(){const [ms,setMs]=useState(0); const run=async()=>{const t=performance.now(); await fetch('https://www.google.com/generate_204',{mode:'no-cors',cache:'no-store'}); setMs(Math.round(performance.now()-t));}; useEffect(()=>{run(); const id=setInterval(run,15000); return ()=>clearInterval(id);},[]); return <div className='widget-content'><h4>Ping</h4><div>{ms} ms</div></div>;}

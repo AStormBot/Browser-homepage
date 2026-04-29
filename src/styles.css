@@ -1,0 +1,10 @@
+:root{font-family:Inter,system-ui;background:#08151f;color:#fff}*{box-sizing:border-box}
+.page{min-height:100vh;padding:20px;background:radial-gradient(circle at top,#1b5f83,#08151f)}
+header{font-size:24px;font-weight:700;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:92px;gap:12px}
+.widget{position:relative;border:1px solid #ffffff33;border-radius:24px;padding:12px;backdrop-filter:blur(14px);background:#ffffff22;transition:.2s transform}
+.widget:hover{transform:translateY(-2px)}.widget-content h4{margin:0 0 8px 0}.clock-big{font-size:42px;font-weight:700}.clock-small{font-size:20px}
+textarea{width:100%;min-height:120px;background:#00000033;border:1px solid #fff3;color:#fff;border-radius:12px;padding:8px}
+footer{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);display:flex;gap:8px;background:#0006;padding:8px;border-radius:999px}
+button{background:#fff2;border:1px solid #fff4;color:#fff;padding:8px 14px;border-radius:20px}
+.resize{position:absolute;right:8px;top:8px;cursor:pointer;opacity:.8}
