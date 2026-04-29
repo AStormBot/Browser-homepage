@@ -1,0 +1,2 @@
+import React,{useEffect,useState} from 'react';
+export function WeatherWidget(){const [w,setW]=useState<any>(null); useEffect(()=>{navigator.geolocation.getCurrentPosition(async p=>{const u=`https://api.open-meteo.com/v1/forecast?latitude=${p.coords.latitude}&longitude=${p.coords.longitude}&current=temperature_2m,weather_code&daily=sunrise,sunset&timezone=auto`; const r=await fetch(u); setW(await r.json());});},[]); return <div className='widget-content'><h4>Weather</h4><div>{w?`${w.current.temperature_2m}°C code:${w.current.weather_code}`:'Loading...'}</div></div>}
